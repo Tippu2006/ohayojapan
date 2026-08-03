@@ -100,11 +100,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:site_name", content: "OHAYO JAPAN" },
       { property: "og:title", content: "OHAYO JAPAN" },
       { property: "og:description", content: "KL University × OHAYO JAPAN" },
-      { property: "og:image", content: "https://ohayo-japan-2026.vercel.app/memories/student_delegation_logo.jpg" },
+      { property: "og:image", content: "https://ohayojapanklu.vercel.app/memories/student_delegation_logo.jpg" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "OHAYO JAPAN" },
       { name: "twitter:description", content: "KL University × OHAYO JAPAN" },
-      { name: "twitter:image", content: "https://ohayo-japan-2026.vercel.app/memories/student_delegation_logo.jpg" },
+      { name: "twitter:image", content: "https://ohayojapanklu.vercel.app/memories/student_delegation_logo.jpg" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
@@ -137,7 +137,7 @@ function RootShell({ children }: { children: ReactNode }) {
               "@type": "WebSite",
               name: "OHAYO JAPAN",
               alternateName: ["Ohayo Japan", "OHAYO JAPAN KLU", "Ohayo Japan KLU"],
-              url: "https://ohayo-japan-2026.vercel.app/",
+              url: "https://ohayojapanklu.vercel.app/",
             }),
           }}
         />
