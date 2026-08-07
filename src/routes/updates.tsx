@@ -78,40 +78,40 @@ const movies: Movie[] = [
 
 function UpdatesPage() {
   return (
-    <div className="mx-auto max-w-5xl px-5 pt-28 pb-20">
+    <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 pt-20 sm:pt-28 pb-16 sm:pb-24">
       {/* Header */}
       <Reveal className="text-center">
-        <div className="inline-flex items-center gap-2 rounded-full bg-crimson/20 px-5 py-2 border border-gold/40 text-gold text-xs font-bold tracking-[0.3em] uppercase mb-4">
-          <Sparkles className="h-4 w-4 text-gold animate-pulse" />
+        <div className="inline-flex items-center gap-2 rounded-full bg-crimson/20 px-4 sm:px-5 py-1.5 sm:py-2 border border-gold/40 text-gold text-[10px] sm:text-xs font-bold tracking-[0.2em] sm:tracking-[0.3em] uppercase mb-3 sm:mb-4">
+          <Sparkles className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-gold animate-pulse" />
           OHAYŌ JAPAN LATEST ANNOUNCEMENTS
         </div>
-        <h1 className="gold-text font-display text-4xl sm:text-6xl tracking-wide uppercase">
+        <h1 className="gold-text font-display text-3xl sm:text-5xl lg:text-6xl tracking-wide uppercase">
           New Updates & Media
         </h1>
-        <p className="mt-3 text-sm text-cream/70 max-w-2xl mx-auto font-medium">
+        <p className="mt-2 sm:mt-3 text-xs sm:text-sm text-cream/70 max-w-2xl mx-auto font-medium leading-relaxed">
           Watch the official festival trailer, stay informed on stage announcements, and explore our featured anime movie lineup!
         </p>
       </Reveal>
 
       {/* FIRST: Official Festival Video Trailer Section */}
-      <Reveal delay={100} className="mt-12">
-        <div className="relative overflow-hidden rounded-3xl glass p-6 sm:p-10 border border-gold/40 shadow-[0_0_60px_rgba(200,16,46,0.35)] backdrop-blur-xl">
-          <div className="flex items-center gap-2 mb-3">
-            <Video className="h-5 w-5 text-gold animate-pulse" />
-            <span className="text-xs font-bold text-gold tracking-[0.3em] uppercase">
+      <Reveal delay={100} className="mt-8 sm:mt-12">
+        <div className="relative overflow-hidden rounded-2xl sm:rounded-3xl glass p-4 sm:p-8 lg:p-10 border border-gold/40 shadow-[0_0_60px_rgba(200,16,46,0.35)] backdrop-blur-xl">
+          <div className="flex items-center gap-2 mb-2 sm:mb-3">
+            <Video className="h-4 w-4 sm:h-5 sm:w-5 text-gold animate-pulse" />
+            <span className="text-[10px] sm:text-xs font-bold text-gold tracking-[0.25em] sm:tracking-[0.3em] uppercase">
               OFFICIAL FESTIVAL TRAILER
             </span>
           </div>
-          <h2 className="font-display text-2xl sm:text-4xl text-cream font-extrabold gold-text uppercase mb-6">
+          <h2 className="font-display text-xl sm:text-3xl lg:text-4xl text-cream font-extrabold gold-text uppercase mb-4 sm:mb-6">
             OHAYŌ JAPAN 2026 Official Teaser
           </h2>
 
-          {/* Embedded Video Player */}
-          <div className="relative aspect-video w-full overflow-hidden rounded-2xl border-2 border-gold/40 shadow-[0_0_50px_rgba(0,0,0,0.8)] bg-zinc-950">
+          {/* Embedded Video Player - Fully Responsive for Mobile & PC */}
+          <div className="relative w-full aspect-[16/9] min-h-[200px] sm:min-h-[360px] lg:min-h-[480px] overflow-hidden rounded-xl sm:rounded-2xl border-2 border-gold/40 shadow-[0_0_50px_rgba(0,0,0,0.8)] bg-zinc-950">
             <iframe
               src="https://drive.google.com/file/d/1Q1WtTXXXPuktsa9a528VDT0skqdHfEDW/preview"
               title="OHAYŌ JAPAN Official Video Trailer"
-              className="w-full h-full border-0"
+              className="absolute inset-0 w-full h-full border-0"
               allow="autoplay; encrypted-media; fullscreen"
               allowFullScreen
             />
@@ -120,24 +120,24 @@ function UpdatesPage() {
       </Reveal>
 
       {/* SECOND: Featured Announcement Banner */}
-      <Reveal delay={150} className="mt-12">
-        <div className="relative overflow-hidden rounded-3xl glass p-6 sm:p-10 border border-gold/40 shadow-[0_0_50px_rgba(200,16,46,0.3)]">
-          <div className="flex flex-col md:flex-row items-center gap-6">
-            <div className="shrink-0 rounded-2xl overflow-hidden border border-gold/30 w-full md:w-64 aspect-[16/10]">
+      <Reveal delay={150} className="mt-8 sm:mt-12">
+        <div className="relative overflow-hidden rounded-2xl sm:rounded-3xl glass p-4 sm:p-8 lg:p-10 border border-gold/40 shadow-[0_0_50px_rgba(200,16,46,0.3)]">
+          <div className="flex flex-col md:flex-row items-center gap-4 sm:gap-6">
+            <div className="shrink-0 rounded-xl sm:rounded-2xl overflow-hidden border border-gold/30 w-full md:w-64 aspect-[16/10]">
               <img
                 src={animeMovie}
                 alt="Anime Movie Screening"
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="space-y-3 text-left flex-1">
+            <div className="space-y-2 sm:space-y-3 text-left flex-1">
               <div className="flex items-center gap-2">
-                <Radio className="h-4 w-4 text-crimson animate-pulse" />
-                <span className="text-xs font-bold text-gold tracking-widest uppercase">
+                <Radio className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-crimson animate-pulse" />
+                <span className="text-[10px] sm:text-xs font-bold text-gold tracking-widest uppercase">
                   Featured Event Announcement
                 </span>
               </div>
-              <h2 className="font-display text-2xl sm:text-3xl text-cream font-bold">
+              <h2 className="font-display text-xl sm:text-2xl lg:text-3xl text-cream font-bold">
                 Official Anime Movie Screening
               </h2>
               <p className="text-xs sm:text-sm text-cream/75 leading-relaxed">
@@ -149,23 +149,23 @@ function UpdatesPage() {
       </Reveal>
 
       {/* THIRD: Official Anime Movie Screening Section */}
-      <section className="mt-16">
-        <Reveal className="text-center mb-10">
-          <div className="inline-flex items-center gap-2 text-crimson font-jp text-sm tracking-[0.4em]">
-            <Film className="h-4 w-4" /> 公式アニメ映画上映
+      <section className="mt-12 sm:mt-16">
+        <Reveal className="text-center mb-8 sm:mb-10">
+          <div className="inline-flex items-center gap-2 text-crimson font-jp text-xs sm:text-sm tracking-[0.3em] sm:tracking-[0.4em]">
+            <Film className="h-3.5 w-3.5 sm:h-4 sm:w-4" /> 公式アニメ映画上映
           </div>
-          <h2 className="mt-2 font-display text-3xl sm:text-4xl gold-text tracking-wide uppercase">
+          <h2 className="mt-2 font-display text-2xl sm:text-4xl gold-text tracking-wide uppercase">
             OFFICIAL ANIME MOVIE SCREENING
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-cream/60 font-medium">
+          <p className="mt-1.5 sm:mt-2 text-xs sm:text-sm text-cream/60 font-medium">
             Featured cinematic masterpieces scheduled for screening at OHAYŌ JAPAN 2026
           </p>
         </Reveal>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-4 sm:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           {movies.map((movie, index) => (
             <Reveal key={movie.id} delay={index * 80}>
-              <div className="glass lift group relative flex h-full flex-col overflow-hidden rounded-2xl border border-gold/30 hover:border-gold/60 transition-all duration-300">
+              <div className="glass lift group relative flex h-full flex-col overflow-hidden rounded-xl sm:rounded-2xl border border-gold/30 hover:border-gold/60 transition-all duration-300">
                 <div className="relative aspect-[16/10] overflow-hidden">
                   <img
                     src={movie.image}
@@ -173,7 +173,7 @@ function UpdatesPage() {
                     className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent" />
-                  <span className="absolute top-3 left-3 rounded-full bg-black/70 px-3 py-1 text-[10px] font-bold text-gold border border-gold/40 backdrop-blur-md">
+                  <span className="absolute top-2.5 left-2.5 sm:top-3 sm:left-3 rounded-full bg-black/70 px-2.5 py-0.5 sm:px-3 sm:py-1 text-[9px] sm:text-[10px] font-bold text-gold border border-gold/40 backdrop-blur-md">
                     {movie.genre}
                   </span>
                 </div>

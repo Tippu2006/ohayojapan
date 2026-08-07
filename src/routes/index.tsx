@@ -217,24 +217,24 @@ function Index() {
           >
             <div className="relative group">
               <div className="absolute -inset-6 rounded-full bg-gradient-to-r from-crimson via-gold to-crimson opacity-70 blur-3xl group-hover:opacity-100 transition-opacity duration-500" />
-              <div className="relative flex items-center justify-center rounded-full bg-black/60 backdrop-blur-md p-4 sm:p-6 border-2 border-gold/60 shadow-[0_0_35px_rgba(255,215,0,0.35)] transition-transform duration-500 group-hover:scale-105">
+              <div className="relative flex items-center justify-center rounded-full bg-black/60 backdrop-blur-md p-3 sm:p-6 border-2 border-gold/60 shadow-[0_0_35px_rgba(255,215,0,0.35)] transition-transform duration-500 group-hover:scale-105">
                 <img
                   src="/logo.png"
                   alt="OHAYO JAPAN Official Samurai Emblem Logo"
-                  className="h-48 w-48 object-contain sm:h-64 sm:w-64 drop-shadow-[0_0_20px_rgba(255,215,0,0.3)]"
+                  className="h-36 w-36 object-contain sm:h-56 sm:w-56 md:h-64 md:w-64 drop-shadow-[0_0_20px_rgba(255,215,0,0.3)]"
                 />
               </div>
             </div>
           </div>
 
           <p
-            className="font-jp text-sm tracking-[0.6em] text-gold font-medium sm:text-base"
+            className="font-jp text-xs sm:text-base tracking-[0.4em] sm:tracking-[0.6em] text-gold font-medium"
             style={{ animation: "fade-in 1s 0.2s both" }}
           >
             おはよう ジャパン ２０２６
           </p>
 
-          <h1 className="mt-6 font-display text-[14vw] leading-[0.88] sm:text-[7.5rem] tracking-wider">
+          <h1 className="mt-4 sm:mt-6 font-display text-[11vw] sm:text-[6rem] lg:text-[7.5rem] leading-[0.92] sm:leading-[0.88] tracking-wider">
             {["OHAYŌ", "JAPAN", festival.year].map((line, i) => (
               <span
                 key={line}
