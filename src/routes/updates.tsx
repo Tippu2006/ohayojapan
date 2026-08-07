@@ -94,20 +94,30 @@ function UpdatesPage() {
       </Reveal>
 
       {/* FIRST: Official Festival Video Trailer Section */}
-      <Reveal delay={100} className="mt-8 sm:mt-12">
-        <div className="relative overflow-hidden rounded-2xl sm:rounded-3xl glass p-4 sm:p-8 lg:p-10 border border-gold/40 shadow-[0_0_60px_rgba(200,16,46,0.35)] backdrop-blur-xl">
-          <div className="flex items-center gap-2 mb-2 sm:mb-3">
-            <Video className="h-4 w-4 sm:h-5 sm:w-5 text-gold animate-pulse" />
-            <span className="text-[10px] sm:text-xs font-bold text-gold tracking-[0.25em] sm:tracking-[0.3em] uppercase">
-              OFFICIAL FESTIVAL TRAILER
-            </span>
+      <Reveal delay={100} className="mt-6 sm:mt-12">
+        <div className="relative overflow-hidden rounded-2xl sm:rounded-3xl glass p-3 sm:p-8 lg:p-10 border border-gold/40 shadow-[0_0_60px_rgba(200,16,46,0.35)] backdrop-blur-xl">
+          <div className="flex items-center justify-between gap-2 mb-3">
+            <div className="flex items-center gap-2">
+              <Video className="h-4 w-4 sm:h-5 sm:w-5 text-gold animate-pulse" />
+              <span className="text-[10px] sm:text-xs font-bold text-gold tracking-[0.2em] sm:tracking-[0.3em] uppercase">
+                OFFICIAL FESTIVAL TRAILER
+              </span>
+            </div>
+            <a
+              href="https://drive.google.com/file/d/1Q1WtTXXXPuktsa9a528VDT0skqdHfEDW/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 rounded-full bg-gold/15 px-3 py-1 text-[9px] sm:text-xs font-bold text-gold border border-gold/40 hover:bg-gold hover:text-black transition-colors"
+            >
+              FULLSCREEN ↗
+            </a>
           </div>
-          <h2 className="font-display text-xl sm:text-3xl lg:text-4xl text-cream font-extrabold gold-text uppercase mb-4 sm:mb-6">
+          <h2 className="font-display text-lg sm:text-3xl lg:text-4xl text-cream font-extrabold gold-text uppercase mb-3 sm:mb-6">
             OHAYŌ JAPAN 2026 Official Teaser
           </h2>
 
-          {/* Embedded Video Player - Fully Responsive for Mobile & PC */}
-          <div className="relative w-full aspect-[16/9] min-h-[200px] sm:min-h-[360px] lg:min-h-[480px] overflow-hidden rounded-xl sm:rounded-2xl border-2 border-gold/40 shadow-[0_0_50px_rgba(0,0,0,0.8)] bg-zinc-950">
+          {/* Embedded Video Player - Optimized Large Mobile Frame & Dynamic Height */}
+          <div className="relative w-full aspect-[16/9] h-[58vw] min-h-[280px] sm:min-h-[420px] lg:min-h-[540px] max-h-[750px] overflow-hidden rounded-xl sm:rounded-2xl border-2 border-gold/50 shadow-[0_0_50px_rgba(0,0,0,0.9)] bg-black">
             <iframe
               src="https://drive.google.com/file/d/1Q1WtTXXXPuktsa9a528VDT0skqdHfEDW/preview"
               title="OHAYŌ JAPAN Official Video Trailer"
