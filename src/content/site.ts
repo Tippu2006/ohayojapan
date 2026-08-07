@@ -18,7 +18,7 @@ export const festival = {
   year: "2026",
   /** Festival start — used by the countdown timer. */
   startsAt: "2026-09-16T09:00:00+05:30",
-  dates: { en: "STAY TUNED FOR DATES", jp: "日程近日発表 · 乞うご期待" },
+  dates: { en: "SEPTEMBER 16 – 17, 2026", jp: "2026年9月16日〜17日" },
   presenter: { en: "KL University proudly presents", jp: "KL大学が誇りを持ってお届けします" },
   collabLine: {
     en: "KL University  ×  OHAYO JAPAN",
@@ -446,7 +446,7 @@ export const chapters: { year: string; title: L; dates: L; text: L }[] = [
   {
     year: "2026",
     title: { en: "The Journey Returns — Grand Festival", jp: "旅の再来 — 盛大なる大祭" },
-    dates: { en: "DATES ANNOUNCING SOON", jp: "日程近日発表" },
+    dates: { en: "September 16 – 17, 2026", jp: "2026年9月16日〜17日" },
     text: {
       en: "Bigger main stages, cosplay showstoppers, authentic Japanese cuisine, international diplomatic collaborators, live taiko drumming, and two full days of immersive Japanese heritage.",
       jp: "さらに大規模なメインステージ、本格的なコスプレコンテスト、本場の日本料理、国際協力団体、和太鼓の生演奏、そして二日間にわたる本格的な日本文化没入体験。",

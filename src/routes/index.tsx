@@ -11,6 +11,7 @@ import { FloatingOrbGallery } from "@/components/FloatingOrbGallery";
 import { useLang } from "@/lib/lang";
 import { chapters, faculty, festival, sponsors, stats, team, ui } from "@/content/site";
 import { Maximize2, X } from "lucide-react";
+import { CountdownTimer } from "@/components/CountdownTimer";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -286,24 +287,11 @@ function Index() {
         </div>
       </header>
 
-      {/* COMING SOON SECTION */}
+      {/* COUNTDOWN SECTION */}
       <section className="mx-auto max-w-4xl px-5 py-24 text-center">
-        <SectionTitle kicker="近日公開" title="COMING SOON" />
+        <SectionTitle kicker="カウントダウン" title="COUNTDOWN TO FESTIVAL" />
         <Reveal>
-          <div className="relative inline-block overflow-hidden rounded-3xl glass p-8 sm:p-14 border border-gold/40 shadow-[0_0_50px_rgba(200,16,46,0.35),0_0_30px_rgba(255,215,0,0.3)] backdrop-blur-xl">
-            <div className="absolute -inset-1 rounded-3xl bg-gradient-to-r from-crimson/20 via-gold/30 to-crimson/20 blur-xl opacity-70" />
-            <div className="relative z-10 space-y-5">
-              <span className="inline-block rounded-full bg-crimson/30 px-5 py-2 text-xs sm:text-sm font-bold uppercase tracking-[0.3em] text-gold border border-gold/40 shadow-sm animate-pulse">
-                STAY TUNED FOR THE DATES
-              </span>
-              <h3 className="font-display text-3xl sm:text-5xl font-extrabold gold-text tracking-widest uppercase drop-shadow-[0_4px_20px_rgba(200,16,46,0.5)]">
-                Grand Festival Returning Soon
-              </h3>
-              <p className="font-jp text-sm sm:text-base text-cream/80 max-w-md mx-auto font-medium leading-relaxed">
-                KL University · ２日間の日本文化没入体験
-              </p>
-            </div>
-          </div>
+          <CountdownTimer />
         </Reveal>
       </section>
 
