@@ -14,15 +14,15 @@
 export type L = { en: string; jp: string };
 
 export const festival = {
-  name: "OHAYO JAPAN",
+  name: "OHAYŌ JAPAN",
   year: "2026",
   /** Festival start — used by the countdown timer. */
   startsAt: "2026-09-16T09:00:00+05:30",
   dates: { en: "SEPTEMBER 16 – 17, 2026", jp: "2026年9月16日〜17日" },
   presenter: { en: "KL University proudly presents", jp: "KL大学が誇りを持ってお届けします" },
   collabLine: {
-    en: "KL University  ×  OHAYO JAPAN",
-    jp: "KL大学 × OHAYO JAPAN",
+    en: "KL University  ×  OHAYŌ JAPAN 2026",
+    jp: "KL大学 × OHAYŌ JAPAN 2026",
   },
   subtitle: { en: "Experience Japanese Culture", jp: "日本文化を体験する" },
   tagline: {
@@ -39,6 +39,7 @@ export const ui = {
   schedule: { en: "Schedule", jp: "スケジュール" },
   events: { en: "Events", jp: "イベント" },
   registration: { en: "Registration", jp: "登録" },
+  updates: { en: "New Updates", jp: "最新情報" },
   days: { en: "Days", jp: "日" },
   hours: { en: "Hours", jp: "時間" },
   minutes: { en: "Minutes", jp: "分" },
@@ -46,8 +47,8 @@ export const ui = {
   begun: { en: "The Festival Has Begun!", jp: "祭りが始まりました！" },
   faculty: { en: "Special Thanks To", jp: "特別感謝" },
   facultyNote: {
-    en: "Honoring the visionary leaders and mentors supporting OHAYO JAPAN 2026",
-    jp: "OHAYO JAPAN 2026を支える指導陣および関係者の皆様",
+    en: "Honoring the visionary leaders and mentors supporting OHAYŌ JAPAN 2026",
+    jp: "OHAYŌ JAPAN 2026を支える指導陣および関係者の皆様",
   },
   collaborators: { en: "Collaborators & Sponsors", jp: "協力・スポンサー" },
   timeline: { en: "Festival Timeline", jp: "祭りの歩み" },
@@ -58,8 +59,8 @@ export const ui = {
   },
   viewDetails: { en: "View Details", jp: "詳細を見る" },
   register: { en: "Register Now", jp: "今すぐ登録" },
-  day1: { en: "DAY 1", jp: "1日目" },
-  day2: { en: "DAY 2", jp: "2日目" },
+  day1: { en: "DAY 1 — SEPT 16", jp: "1日目 (9/16)" },
+  day2: { en: "DAY 2 — SEPT 17", jp: "2日目 (9/17)" },
   rules: { en: "Rules & Guidelines", jp: "ルールとガイドライン" },
   venue: { en: "Venue", jp: "会場" },
   time: { en: "Time", jp: "時間" },
@@ -322,12 +323,6 @@ export const team: {
         department: { en: "Student Executive Board", jp: "学生幹部会" },
         photo: "/team/anvi.jpg",
       },
-      {
-        name: "B JOSHNA",
-        role: { en: "Chief Secretary", jp: "首席秘書官" },
-        department: { en: "Student Executive Board", jp: "学生幹部会" },
-        photo: "/team/jyosthna.jpg",
-      },
     ],
   },
   {
@@ -389,12 +384,6 @@ export const team: {
         photo: "/team/ameen_khan.jpg",
       },
       {
-        name: "T LEELADHAR",
-        role: { en: "Hospitality Lead", jp: "接待・おもてなし責任者" },
-        department: { en: "Hospitality Cell", jp: "接待部" },
-        photo: "/team/leeladhar.jpg",
-      },
-      {
         name: "K SUMANTHIKA",
         role: { en: "Hospitality Co-Lead", jp: "副接待・おもてなし責任者" },
         department: { en: "Hospitality Cell", jp: "接待部" },
@@ -439,8 +428,8 @@ export const chapters: { year: string; title: L; dates: L; text: L }[] = [
     title: { en: "First Chapter — The Dawn", jp: "第一章 — 黎明" },
     dates: { en: "November 7 – 8, 2024", jp: "2024年11月7日〜8日" },
     text: {
-      en: "The first OHAYO JAPAN opened its gates — calligraphy, language workshops, traditional arts, and a campus transformed into a vibrant sanctuary of Japanese culture.",
-      jp: "最初のOHAYO JAPANが開門。書道、言語ワークショップ、伝統芸術、そしてキャンパス全体が鮮やかな日本文化の聖地へと生まれ変わりました。",
+      en: "The first OHAYŌ JAPAN opened its gates — calligraphy, language workshops, traditional arts, and a campus transformed into a vibrant sanctuary of Japanese culture.",
+      jp: "最初のOHAYŌ JAPANが開門。書道、言語ワークショップ、伝統芸術、そしてキャンパス全体が鮮やかな日本文化の聖地へと生まれ変わりました。",
     },
   },
   {

@@ -16,16 +16,16 @@ import { CountdownTimer } from "@/components/CountdownTimer";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "OHAYO JAPAN" },
+      { title: "OHAYŌ JAPAN" },
       {
         name: "description",
-        content: "KL University × OHAYO JAPAN",
+        content: "KL University × OHAYŌ JAPAN",
       },
-      { property: "og:site_name", content: "OHAYO JAPAN" },
-      { property: "og:title", content: "OHAYO JAPAN" },
+      { property: "og:site_name", content: "OHAYŌ JAPAN" },
+      { property: "og:title", content: "OHAYŌ JAPAN" },
       {
         property: "og:description",
-        content: "KL University × OHAYO JAPAN",
+        content: "KL University × OHAYŌ JAPAN",
       },
     ],
   }),
@@ -235,7 +235,7 @@ function Index() {
           </p>
 
           <h1 className="mt-6 font-display text-[14vw] leading-[0.88] sm:text-[7.5rem] tracking-wider">
-            {["OHAYO", "JAPAN", festival.year].map((line, i) => (
+            {["OHAYŌ", "JAPAN", festival.year].map((line, i) => (
               <span
                 key={line}
                 className="block gold-text font-extrabold"
@@ -244,7 +244,14 @@ function Index() {
                   filter: "drop-shadow(0 10px 30px rgba(200, 16, 46, 0.6))",
                 }}
               >
-                {line}
+                {line === "OHAYŌ" ? (
+                  <span className="inline-block relative">
+                    OHAYO
+                    <span className="absolute -top-[0.16em] right-[0.24em] w-[0.40em] h-[0.07em] bg-gradient-to-r from-[#FFE58F] via-[#FFD700] to-[#E6A100] rounded-full shadow-[0_0_10px_rgba(255,215,0,0.9)]" />
+                  </span>
+                ) : (
+                  line
+                )}
               </span>
             ))}
           </h1>
@@ -756,7 +763,7 @@ function Index() {
           <div className="h-px w-24 mx-auto bg-gradient-to-r from-transparent via-gold/50 to-transparent" />
 
           <p className="text-xs text-cream/50 font-jp tracking-wider">
-            © 2026 OHAYO JAPAN — 日本文化祭 · All Rights Reserved
+            © 2026 OHAYŌ JAPAN — 日本文化祭 · All Rights Reserved
           </p>
         </div>
       </footer>

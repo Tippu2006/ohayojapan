@@ -7,13 +7,13 @@ import lanterns from "@/assets/lanterns.jpg";
 export const Route = createFileRoute("/register")({
   head: () => ({
     meta: [
-      { title: "Registration — OHAYO JAPAN" },
+      { title: "Registration — OHAYŌ JAPAN" },
       {
         name: "description",
-        content: "KL University × OHAYO JAPAN",
+        content: "KL University × OHAYŌ JAPAN",
       },
-      { property: "og:title", content: "Registration — OHAYO JAPAN" },
-      { property: "og:description", content: "KL University × OHAYO JAPAN" },
+      { property: "og:title", content: "Registration — OHAYŌ JAPAN" },
+      { property: "og:description", content: "KL University × OHAYŌ JAPAN" },
     ],
   }),
   component: RegisterPage,
@@ -60,10 +60,6 @@ function RegisterPage() {
           </Reveal>
         ))}
       </div>
-
-      <p className="mt-16 text-center text-xs text-cream/40">
-        Edit every form link, event and text in <code>src/content/site.ts</code>.
-      </p>
     </div>
   );
 }

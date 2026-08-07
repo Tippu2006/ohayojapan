@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Home, CalendarDays, Ticket, PenLine } from "lucide-react";
+import { Home, CalendarDays, Ticket, PenLine, Sparkles } from "lucide-react";
 import { useLang } from "@/lib/lang";
 import { ui } from "@/content/site";
 
@@ -8,6 +8,7 @@ const items = [
   { to: "/schedule", label: ui.schedule, Icon: CalendarDays },
   { to: "/events", label: ui.events, Icon: Ticket },
   { to: "/register", label: ui.registration, Icon: PenLine },
+  { to: "/updates", label: ui.updates, Icon: Sparkles },
 ] as const;
 
 /** Always-visible floating dock. */

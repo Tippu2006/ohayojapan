@@ -39,7 +39,7 @@ export function KunaiCursor() {
     const style = document.createElement("style");
     style.id = "kunai-cursor-style";
     style.innerHTML = `
-      body, a, button, input, textarea, select, [role="button"], article, .glass, .lift, .cursor-pointer {
+      *, body, html, a, button, input, textarea, select, iframe, video, embed, object, [role="button"], article, .glass, .lift, .cursor-pointer {
         cursor: none !important;
       }
     `;
@@ -93,10 +93,10 @@ export function KunaiCursor() {
       setPos({ x, y });
       lastPosRef.current = { x, y };
 
-      // Check if hovering interactive element
+      // Check if hovering interactive element or video/iframe
       const target = e.target as HTMLElement | null;
       const isInteractive = !!target?.closest(
-        'a, button, input, textarea, select, [role="button"], article, .glass, .lift, .cursor-pointer'
+        'a, button, input, textarea, select, iframe, video, embed, [role="button"], article, .glass, .lift, .cursor-pointer'
       );
       setIsHovered(isInteractive);
 
@@ -117,7 +117,11 @@ export function KunaiCursor() {
       setIsClicking(false);
     };
 
-    const handleMouseLeave = () => {
+    const handleMouseLeave = (e: MouseEvent) => {
+      // Don't hide cursor if moving to an iframe/video
+      if (e.relatedTarget === null && e.clientY > 0 && e.clientY < window.innerHeight && e.clientX > 0 && e.clientX < window.innerWidth) {
+        return;
+      }
       setIsVisible(false);
     };
 

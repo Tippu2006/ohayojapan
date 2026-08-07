@@ -339,3 +339,10 @@
     opacity: 0;
   }
 }
+
+/* Ensure Kunai Cursor is used everywhere, including videos and iframes */
+@media (pointer: fine) {
+  *, html, body, iframe, video, embed, object, audio {
+    cursor: none !important;
+  }
+}

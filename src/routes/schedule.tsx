@@ -8,13 +8,13 @@ import lanterns from "@/assets/lanterns.jpg";
 export const Route = createFileRoute("/schedule")({
   head: () => ({
     meta: [
-      { title: "Schedule — OHAYO JAPAN" },
+      { title: "Schedule — OHAYŌ JAPAN" },
       {
         name: "description",
-        content: "KL University × OHAYO JAPAN",
+        content: "KL University × OHAYŌ JAPAN",
       },
-      { property: "og:title", content: "Schedule — OHAYO JAPAN" },
-      { property: "og:description", content: "KL University × OHAYO JAPAN" },
+      { property: "og:title", content: "Schedule — OHAYŌ JAPAN" },
+      { property: "og:description", content: "KL University × OHAYŌ JAPAN" },
     ],
   }),
   component: SchedulePage,
@@ -32,12 +32,12 @@ function SchedulePage() {
         <h1 className="mt-3 font-display text-4xl sm:text-6xl gold-text">{t(ui.schedule)}</h1>
         <p className="mt-1 text-xs text-accent">{t(festival.dates)}</p>
 
-        {/* Schedule Timing Disclaimer Note */}
-        <div className="mt-5 inline-block rounded-2xl glass px-5 py-2.5 border border-gold/40 shadow-[0_0_20px_rgba(255,215,0,0.2)]">
+        {/* Schedule Timing Note */}
+        <div className="mt-5 inline-block rounded-2xl glass px-6 py-3 border border-gold/40 shadow-[0_0_20px_rgba(255,215,0,0.2)]">
           <p className="text-xs font-semibold text-gold tracking-wide">
-            Note: Timings might be updated after official dates are announced.
+            Note: Day 1 — September 16, 2026 & Day 2 — September 17, 2026
             <span className="block text-[11px] font-jp text-cream/70 font-normal mt-0.5">
-              ※ スケジュールおよび日時は、公式日程発表後に更新される場合があります。
+              ※ 1日目: 9月16日 · 2日目: 9月17日
             </span>
           </p>
         </div>
