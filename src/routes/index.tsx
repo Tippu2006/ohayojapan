@@ -134,7 +134,7 @@ function SectionTitle({ kicker, title }: { kicker?: string; title: string }) {
 }
 
 function Index() {
-  const { t } = useLang();
+  const { lang, t } = useLang();
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
@@ -235,7 +235,10 @@ function Index() {
           </p>
 
           <h1 className="mt-4 sm:mt-6 font-display text-[11vw] sm:text-[6rem] lg:text-[7.5rem] leading-[0.92] sm:leading-[0.88] tracking-wider">
-            {["OHAYŌ", "JAPAN", festival.year].map((line, i) => (
+            {(lang === "jp"
+              ? ["おはよう", "ジャパン", "２０２６"]
+              : ["OHAYŌ", "JAPAN", festival.year]
+            ).map((line, i) => (
               <span
                 key={line}
                 className="block gold-text font-extrabold"
@@ -763,7 +766,7 @@ function Index() {
           <div className="h-px w-24 mx-auto bg-gradient-to-r from-transparent via-gold/50 to-transparent" />
 
           <p className="text-xs text-cream/50 font-jp tracking-wider">
-            © 2026 OHAYŌ JAPAN — 日本文化祭 · All Rights Reserved
+            © 2026 OHAYŌ JAPAN — ジャパン文化祭 · All Rights Reserved
           </p>
         </div>
       </footer>

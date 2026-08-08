@@ -24,7 +24,7 @@ export const festival = {
     en: "KL University  ×  OHAYŌ JAPAN 2026",
     jp: "KL大学 × OHAYŌ JAPAN 2026",
   },
-  subtitle: { en: "Experience Japanese Culture", jp: "日本文化を体験する" },
+  subtitle: { en: "Experience Japanese Culture", jp: "ジャパン文化を体験する" },
   tagline: {
     en: "Anime • Cosplay • Language • Dance • Music • Food • Games • Traditions",
     jp: "アニメ • コスプレ • 言語 • ダンス • 音楽 • 食 • ゲーム • 伝統",
@@ -70,7 +70,7 @@ export const ui = {
   music: { en: "Japanese Ambience Music", jp: "和風アンビエントBGM" },
   scheduleNote: {
     en: "Two days. One unforgettable Japanese journey.",
-    jp: "二日間。忘れられない日本の旅。",
+    jp: "二日間。忘れられないジャパンの旅。",
   },
   eventsNote: {
     en: "Explore our rich array of cultural competitions, performances & workshops",
@@ -429,7 +429,7 @@ export const chapters: { year: string; title: L; dates: L; text: L }[] = [
     dates: { en: "November 7 – 8, 2024", jp: "2024年11月7日〜8日" },
     text: {
       en: "The first OHAYŌ JAPAN opened its gates — calligraphy, language workshops, traditional arts, and a campus transformed into a vibrant sanctuary of Japanese culture.",
-      jp: "最初のOHAYŌ JAPANが開門。書道、言語ワークショップ、伝統芸術、そしてキャンパス全体が鮮やかな日本文化の聖地へと生まれ変わりました。",
+      jp: "最初のOHAYŌ JAPANが開門。書道、言語ワークショップ、伝統芸術、そしてキャンパス全体が鮮やかなジャパン文化の聖地へと生まれ変わりました。",
     },
   },
   {
@@ -438,7 +438,7 @@ export const chapters: { year: string; title: L; dates: L; text: L }[] = [
     dates: { en: "September 16 – 17, 2026", jp: "2026年9月16日〜17日" },
     text: {
       en: "Bigger main stages, cosplay showstoppers, authentic Japanese cuisine, international diplomatic collaborators, live taiko drumming, and two full days of immersive Japanese heritage.",
-      jp: "さらに大規模なメインステージ、本格的なコスプレコンテスト、本場の日本料理、国際協力団体、和太鼓の生演奏、そして二日間にわたる本格的な日本文化没入体験。",
+      jp: "さらに大規模なメインステージ、本格的なコスプレコンテスト、本場のジャパン料理、国際協力団体、和太鼓の生演奏、そして二日間にわたる本格的なジャパン文化没入体験。",
     },
   },
 ];
@@ -455,7 +455,7 @@ export const schedule: Record<
       title: { en: "Arrival of Guests", jp: "ゲストの到着・受付" },
       desc: {
         en: "Arrival and grand reception of international dignitaries, Japanese delegates, and honored guests.",
-        jp: "国際外交使節、日本代表団、および特別来賓の皆様のご到着と歓迎受付。",
+        jp: "国際外交使節、ジャパン代表団、および特別来賓の皆様のご到着と歓迎受付。",
       },
       icon: "🏛️",
       image: "/memories/guest_arrival.jpg",
@@ -477,7 +477,7 @@ export const schedule: Record<
       title: { en: "Workshops & Cultural Stalls", jp: "文化ワークショップ＆展示" },
       desc: {
         en: "Interactive Japanese calligraphy (Shodo), origami art, language masterclasses, and cultural stalls.",
-        jp: "本格筆道・書道、折り紙工芸、日本語体験クラス、および日本文化ブース。",
+        jp: "本格筆道・書道、折り紙工芸、日本語体験クラス、およびジャパン文化ブース。",
       },
       icon: "🖌️",
       image: "/memories/workshops.jpg",
@@ -522,7 +522,7 @@ export const schedule: Record<
       title: { en: "Guest Arrival", jp: "ゲストの到着・受付" },
       desc: {
         en: "Welcoming international delegates, Japanese guests, and faculty members for Day 2.",
-        jp: "第2日目の国際使節、日本人ゲスト、および教員の皆様のご到着と歓迎受付。",
+        jp: "第2日目の国際使節、ジャパンゲスト、および教員の皆様のご到着と歓迎受付。",
       },
       icon: "🏛️",
       image: "/memories/guest_arrival.jpg",
@@ -554,7 +554,7 @@ export const schedule: Record<
       title: { en: "Cultural Workshops", jp: "文化ワークショップ＆展示" },
       desc: {
         en: "Interactive Japanese language masterclass, calligraphy (Shodo), origami, and cultural booths.",
-        jp: "本格筆道・書道、折り紙工芸、日本語体験クラス、および日本文化ブース。",
+        jp: "本格筆道・書道、折り紙工芸、日本語体験クラス、およびジャパン文化ブース。",
       },
       icon: "🖌️",
       image: "/memories/workshop_tea.jpg",
@@ -562,10 +562,10 @@ export const schedule: Record<
     {
       time: "03:00 PM",
       venue: { en: "Peacock Hall", jp: "ピーコックホール" },
-      title: { en: "Japanese Movie Screening", jp: "日本映画上映会" },
+      title: { en: "Japanese Movie Screening", jp: "ジャパン映画上映会" },
       desc: {
         en: "Special auditorium screening of celebrated Japanese cinema & anime feature film.",
-        jp: "大講堂での名作日本映画・アニメーション特別上映会。",
+        jp: "大講堂での名作ジャパン映画・アニメーション特別上映会。",
       },
       icon: "🎬",
       image: "/memories/anime_movie_screening.jpg",
@@ -626,7 +626,7 @@ export const events: EventItem[] = [
       },
       {
         en: "Costumes must originate from official Japanese media or folklore.",
-        jp: "衣装は公式の日本のアニメ、ゲーム、漫画、伝統に由来すること。",
+        jp: "衣装は公式のジャパンのアニメ、ゲーム、漫画、伝統に由来すること。",
       },
     ],
     venue: { en: "Yet to be announced", jp: "会場近日発表" },
@@ -644,7 +644,7 @@ export const events: EventItem[] = [
     },
     description: {
       en: "Teams blend traditional Indian dance styles (Bharatanatyam, Kathak, Folk) with Japanese Yosakoi, Odori, and modern J-Pop routines in a spectacular synchronized performance.",
-      jp: "インドの伝統舞踊（バラタナティヤム、カタック、民謡など）と日本のよさこい・踊り・J-POPの振付を融合させた革新的なステージ表現。",
+      jp: "インドの伝統舞踊（バラタナティヤム、カタック、民謡など）とジャパンのよさこい・踊り・J-POPの振付を融合させた革新的なステージ表現。",
     },
     rules: [
       { en: "Teams must consist of 4 to 12 dancers.", jp: "チーム構成は4名〜12名。" },

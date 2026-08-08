@@ -85,7 +85,7 @@ export function CountdownTimer({ targetDate = festival.startsAt }: { targetDate?
           </div>
 
           <p className="font-jp text-xs sm:text-sm text-cream/70 font-medium tracking-wider pt-1">
-            KL University Campus · ２日間の日本文化没入体験
+            KL University Campus · ２日間のジャパン文化没入体験
           </p>
         </div>
       </div>
