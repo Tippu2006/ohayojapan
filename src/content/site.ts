@@ -657,7 +657,7 @@ export const events: EventItem[] = [
     venue: { en: "Yet to be announced", jp: "会場近日発表" },
     time: { en: "Yet to be announced", jp: "日時近日発表" },
     coordinator: "Dr. G. Meena",
-    form: "https://docs.google.com/forms/d/e/1FAIpQLSc-dance-example/viewform",
+    form: "https://forms.gle/RM2nbEzpTCVAkJ8KA",
     image: "/memories/indo_japanese_dance.jpg",
   },
   {
@@ -793,7 +793,7 @@ export const registrations: { title: L; desc: L; form: string; image: string }[]
       en: "Register your dance group for the synchronized Indo-Japanese fusion performance.",
       jp: "印日フュージョンダンスステージへのチームエントリーはこちら。",
     },
-    form: "https://docs.google.com/forms/d/e/1FAIpQLSc-dance-contest/viewform",
+    form: "https://forms.gle/RM2nbEzpTCVAkJ8KA",
     image: "/memories/indo_japanese_dance.jpg",
   },
   {
