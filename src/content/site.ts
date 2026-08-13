@@ -309,97 +309,245 @@ export const team: {
   }[];
 }[] = [
   {
-    category: { en: "Core Student Executive Committee", jp: "学生実行委員会・幹部" },
+    category: { en: "Fest Chiefs", jp: "フェスティバル幹部" },
     members: [
       {
         name: "K. V. S. S. KUSHMITH",
         role: { en: "Chief Executive", jp: "最高執行責任者" },
-        department: { en: "Student Executive Board", jp: "学生幹部会" },
+        department: { en: "Fest Chiefs", jp: "フェスティバル幹部" },
         photo: "/team/kushmith.png",
       },
       {
         name: "ANVI SHARMA",
-        role: { en: "Chief Executive Co-Lead", jp: "副最高執行責任者" },
-        department: { en: "Student Executive Board", jp: "学生幹部会" },
+        role: { en: "Chief Executive", jp: "最高執行責任者" },
+        department: { en: "Fest Chiefs", jp: "フェスティバル幹部" },
         photo: "/team/anvi.jpg",
+      },
+      {
+        name: "MUPPAVARAPU SIVARAM",
+        role: { en: "Chief Secretary", jp: "最高書記官" },
+        department: { en: "Fest Chiefs", jp: "フェスティバル幹部" },
+        photo: teamAvatar("MUPPAVARAPU SIVARAM", "CHIEF SECRETARY"),
+      },
+      {
+        name: "K. VENKATESH",
+        role: { en: "Chief Secretary", jp: "最高書記官" },
+        department: { en: "Fest Chiefs", jp: "フェスティバル幹部" },
+        photo: teamAvatar("K. VENKATESH", "CHIEF SECRETARY"),
       },
     ],
   },
   {
-    category: { en: "Event Operations & Cultural Stage", jp: "イベント・舞台運営部門" },
+    category: { en: "Public Relations (PR)", jp: "広報・PR部門" },
     members: [
       {
-        name: "TIPPU SULTHAN SHAIK",
-        role: { en: "PR Lead", jp: "広報責任者" },
-        department: { en: "Event Operations Team", jp: "イベント運営チーム" },
+        name: "TIPPU SULTHAN SK",
+        role: { en: "PR Chief", jp: "広報責任者" },
+        department: { en: "PR Team", jp: "広報チーム" },
         photo: "/team/tippu.jpg",
       },
       {
-        name: "S AKHIL",
+        name: "HARSHITA KUMARI",
+        role: { en: "PR Chief", jp: "広報責任者" },
+        department: { en: "PR Team", jp: "広報チーム" },
+        photo: teamAvatar("HARSHITA KUMARI", "PR CHIEF"),
+      },
+      {
+        name: "B VARUN SAI KARTHEEK",
+        role: { en: "Core Team", jp: "コアチーム" },
+        department: { en: "PR Team", jp: "広報チーム" },
+        photo: teamAvatar("B VARUN SAI KARTHEEK", "CORE"),
+      },
+      {
+        name: "SRINIVASA GOWTHAM DEEVI",
+        role: { en: "Core Team", jp: "コアチーム" },
+        department: { en: "PR Team", jp: "広報チーム" },
+        photo: teamAvatar("SRINIVASA GOWTHAM DEEVI", "CORE"),
+      },
+      {
+        name: "VELPURI AKSHARA",
+        role: { en: "Core Team", jp: "コアチーム" },
+        department: { en: "PR Team", jp: "広報チーム" },
+        photo: teamAvatar("VELPURI AKSHARA", "CORE"),
+      },
+      {
+        name: "MD NAZMA BEGUM",
+        role: { en: "Core Team", jp: "コアチーム" },
+        department: { en: "PR Team", jp: "広報チーム" },
+        photo: teamAvatar("MD NAZMA BEGUM", "CORE"),
+      },
+    ],
+  },
+  {
+    category: { en: "Creative Arts & Design Team", jp: "クリエイティブアーツ・デザインチーム" },
+    members: [
+      {
+        name: "NADAMUNI VASAVI",
+        role: { en: "Designing Chief", jp: "デザイン統括" },
+        department: { en: "Creative Arts & Design Team", jp: "クリエイティブアーツ・デザインチーム" },
+        photo: teamAvatar("NADAMUNI VASAVI", "DESIGN CHIEF"),
+      },
+      {
+        name: "LAKSHMI CHARAN GUDIPATI",
+        role: { en: "Designing Chief", jp: "デザイン統括" },
+        department: { en: "Creative Arts & Design Team", jp: "クリエイティブアーツ・デザインチーム" },
+        photo: "/team/charan.jpg",
+      },
+      {
+        name: "SUMANTHIKA KANCHARLA",
+        role: { en: "Creative Arts Chief", jp: "クリエイティブアーツ統括" },
+        department: { en: "Creative Arts & Design Team", jp: "クリエイティブアーツ・デザインチーム" },
+        photo: "/team/sumanthika.jpg",
+      },
+      {
+        name: "ANUHYA DRONAVALLI",
+        role: { en: "Creative Arts Chief", jp: "クリエイティブアーツ統括" },
+        department: { en: "Creative Arts & Design Team", jp: "クリエイティブアーツ・デザインチーム" },
+        photo: teamAvatar("ANUHYA DRONAVALLI", "CREATIVE CHIEF"),
+      },
+    ],
+  },
+  {
+    category: { en: "Event Management", jp: "イベント運営部門" },
+    members: [
+      {
+        name: "SHAIK ROHAN",
+        role: { en: "Chief", jp: "統括責任者" },
+        department: { en: "Event Operations", jp: "イベント運営部" },
+        photo: teamAvatar("SHAIK ROHAN", "CHIEF"),
+      },
+      {
+        name: "MAHAMMAD ABDUL RAHAMAN ABID",
+        role: { en: "Core Team", jp: "コアチーム" },
+        department: { en: "Event Operations", jp: "イベント運営部" },
+        photo: teamAvatar("MAHAMMAD ABDUL RAHAMAN ABID", "CORE"),
+      },
+      {
+        name: "KAGITHA BOBBY",
+        role: { en: "Core Team", jp: "コアチーム" },
+        department: { en: "Event Operations", jp: "イベント運営部" },
+        photo: teamAvatar("KAGITHA BOBBY", "CORE"),
+      },
+    ],
+  },
+  {
+    category: { en: "Stage Management", jp: "舞台進行・演出部門" },
+    members: [
+      {
+        name: "VIRAVALLI HARI VEERENDRA SATYA",
+        role: { en: "Chief", jp: "舞台統括責任者" },
+        department: { en: "Stage Division", jp: "舞台部" },
+        photo: "/team/hari.jpg",
+      },
+      {
+        name: "KOVELA ABHISHEK",
+        role: { en: "Core Team", jp: "コアチーム" },
+        department: { en: "Stage Division", jp: "舞台部" },
+        photo: teamAvatar("KOVELA ABHISHEK", "CORE"),
+      },
+      {
+        name: "SAYANI AKHIL",
         role: { en: "Stage Anchor", jp: "ステージ司会・MC" },
-        department: { en: "Cultural Stage Team", jp: "舞台運営チーム" },
+        department: { en: "Stage Division", jp: "舞台部" },
         photo: "/team/akhil.jpg",
       },
     ],
   },
   {
-    category: { en: "Creative Design & Media Team", jp: "デザイン・広報・メディア部門" },
+    category: { en: "Hospitality", jp: "接待・おもてなし部門" },
     members: [
       {
-        name: "LAKSHMI CHARAN",
-        role: { en: "Lead Editor", jp: "動画編集・クリエイティブ統括" },
-        department: { en: "Creative & Media Cell", jp: "メディア・デザイン班" },
-        photo: "/team/charan.jpg",
+        name: "KIRAN SAI VARSHITHA GANDEPALLI",
+        role: { en: "Chief", jp: "接待統括責任者" },
+        department: { en: "Hospitality Cell", jp: "接待部" },
+        photo: teamAvatar("KIRAN SAI VARSHITHA GANDEPALLI", "CHIEF"),
       },
       {
-        name: "HARI",
-        role: { en: "Lead Photographer", jp: "写真・撮影統括" },
-        department: { en: "Media & Documentation", jp: "ドキュメンタリー班" },
-        photo: "/team/hari.jpg",
-      },
-      {
-        name: "Y RAJESH",
-        role: { en: "Photographer Co-Lead", jp: "副写真・撮影担当" },
-        department: { en: "Media & Documentation", jp: "ドキュメンタリー班" },
-        photo: "/team/rajesh.jpg",
+        name: "NEHA SRUSTI SREE",
+        role: { en: "Core Team", jp: "コアチーム" },
+        department: { en: "Hospitality Cell", jp: "接待部" },
+        photo: teamAvatar("NEHA SRUSTI SREE", "CORE"),
       },
     ],
   },
   {
-    category: {
-      en: "Logistics, Hospitality & Volunteer Crew",
-      jp: "ロジスティクス・ボランティア部門",
-    },
+    category: { en: "HR & Drafting", jp: "人事・起草部門" },
     members: [
       {
-        name: "D JOSEPH JAKWES",
-        role: { en: "Logistics Lead", jp: "ロジスティクス責任者" },
-        department: { en: "Logistics Division", jp: "設営・物流部" },
+        name: "NEHA SRUSTI SREE",
+        role: { en: "Chief", jp: "人事統括責任者" },
+        department: { en: "HR & Drafting", jp: "人事部" },
+        photo: teamAvatar("NEHA SRUSTI SREE", "CHIEF"),
+      },
+      {
+        name: "J VEDA SUHAS KULKARNI",
+        role: { en: "Chief", jp: "人事統括責任者" },
+        department: { en: "HR & Drafting", jp: "人事部" },
+        photo: teamAvatar("J VEDA SUHAS KULKARNI", "CHIEF"),
+      },
+      {
+        name: "POLURI RAMESH",
+        role: { en: "Core Team", jp: "コアチーム" },
+        department: { en: "HR & Drafting", jp: "人事部" },
+        photo: teamAvatar("POLURI RAMESH", "CORE"),
+      },
+    ],
+  },
+  {
+    category: { en: "Logistics", jp: "設営・ロジスティクス部門" },
+    members: [
+      {
+        name: "DASARI JOSEPH JAKWES",
+        role: { en: "Chief", jp: "ロジスティクス責任者" },
+        department: { en: "Logistics Division", jp: "設営部" },
         photo: "/team/joseph.jpg",
       },
       {
-        name: "P AMEEN KHAN",
-        role: { en: "Logistics Co-Lead", jp: "副ロジスティクス責任者" },
-        department: { en: "Logistics Division", jp: "設営・物流部" },
+        name: "PATHAN AMEENKHAN",
+        role: { en: "Core Team", jp: "コアチーム" },
+        department: { en: "Logistics Division", jp: "設営部" },
         photo: "/team/ameen_khan.jpg",
       },
       {
-        name: "K SUMANTHIKA",
-        role: { en: "Hospitality Co-Lead", jp: "副接待・おもてなし責任者" },
-        department: { en: "Hospitality Cell", jp: "接待部" },
-        photo: "/team/sumanthika.jpg",
+        name: "BHADRIRAJU SREEHITHA",
+        role: { en: "Core Team", jp: "コアチーム" },
+        department: { en: "Logistics Division", jp: "設営部" },
+        photo: teamAvatar("BHADRIRAJU SREEHITHA", "CORE"),
       },
+    ],
+  },
+  {
+    category: { en: "Protocol", jp: "プロトコル・案内部門" },
+    members: [
       {
-        name: "ABHIRAM CHOWDARY",
-        role: { en: "Protocol Lead", jp: "プロトコル責任者" },
+        name: "PASALA ABHIRAM CHOWDARY",
+        role: { en: "Chief", jp: "プロトコル責任者" },
         department: { en: "Protocol Division", jp: "プロトコル部" },
         photo: "/team/abhiram.jpg",
       },
       {
-        name: "P BAALRAM",
-        role: { en: "Protocol Co-Lead", jp: "副プロトコル責任者" },
+        name: "KOMMINENI JAHNAVI",
+        role: { en: "Chief", jp: "プロトコル責任者" },
+        department: { en: "Protocol Division", jp: "プロトコル部" },
+        photo: teamAvatar("KOMMINENI JAHNAVI", "CHIEF"),
+      },
+      {
+        name: "BAAL RAM CHARAN",
+        role: { en: "Core Team", jp: "コアチーム" },
         department: { en: "Protocol Division", jp: "プロトコル部" },
         photo: "/team/balaram.jpg",
+      },
+      {
+        name: "YEMPULURU RAJESH",
+        role: { en: "Core Team", jp: "コアチーム" },
+        department: { en: "Protocol Division", jp: "プロトコル部" },
+        photo: "/team/rajesh.jpg",
+      },
+      {
+        name: "SHAIK MOHAMMAD KHAJI",
+        role: { en: "Core Team", jp: "コアチーム" },
+        department: { en: "Protocol Division", jp: "プロトコル部" },
+        photo: teamAvatar("SHAIK MOHAMMAD KHAJI", "CORE"),
       },
     ],
   },
@@ -684,7 +832,7 @@ export const events: EventItem[] = [
     venue: { en: "Yet to be announced", jp: "会場近日発表" },
     time: { en: "Yet to be announced", jp: "日時近日発表" },
     coordinator: "Prof. H. Sato",
-    form: "https://docs.google.com/forms/d/e/1FAIpQLSc-karaoke-example/viewform",
+    form: "https://forms.gle/RGrdq6xv17ErQ9Gs7",
     image: "/memories/karaoke_competition.jpg",
   },
   {
@@ -711,7 +859,7 @@ export const events: EventItem[] = [
     venue: { en: "Yet to be announced", jp: "会場近日発表" },
     time: { en: "Yet to be announced", jp: "日時近日発表" },
     coordinator: "Prof. A. Yamada",
-    form: "https://docs.google.com/forms/d/e/1FAIpQLSc-origami-example/viewform",
+    form: "https://forms.gle/Z76UA4MRfQdh5Ptx9",
     image: "/memories/origami_workshop.jpg",
   },
   {
@@ -738,7 +886,7 @@ export const events: EventItem[] = [
     venue: { en: "Yet to be announced", jp: "会場近日発表" },
     time: { en: "Yet to be announced", jp: "日時近日発表" },
     coordinator: "Prof. T. Nakamura",
-    form: "https://docs.google.com/forms/d/e/1FAIpQLSc-shodo-example/viewform",
+    form: "https://forms.gle/Z76UA4MRfQdh5Ptx9",
     image: "/memories/calligraphy_workshop.jpg",
   },
   {
@@ -762,7 +910,7 @@ export const events: EventItem[] = [
     venue: { en: "Yet to be announced", jp: "会場近日発表" },
     time: { en: "Yet to be announced", jp: "日時近日発表" },
     coordinator: "Dr. P. Anitha",
-    form: "https://docs.google.com/forms/d/e/1FAIpQLSc-culture-example/viewform",
+    form: "https://forms.gle/Z76UA4MRfQdh5Ptx9",
     image: "/memories/tea_ceremony.jpg",
   },
 ];
@@ -802,7 +950,7 @@ export const registrations: { title: L; desc: L; form: string; image: string }[]
       en: "Take the mic and perform iconic Japanese anime openings, city pop, and J-Pop hits.",
       jp: "名曲アニソンとJ-POPで熱唱！ステージでのカラオケ登録はこちら。",
     },
-    form: "https://docs.google.com/forms/d/e/1FAIpQLSc-karaoke-registration/viewform",
+    form: "https://forms.gle/RGrdq6xv17ErQ9Gs7",
     image: "/memories/karaoke_competition.jpg",
   },
   {
@@ -811,7 +959,7 @@ export const registrations: { title: L; desc: L; form: string; image: string }[]
       en: "Reserve your seat for Japanese Calligraphy (Shodo), Origami, and Tea Ceremony masterclasses.",
       jp: "書道、折り紙、本格茶道ワークショップの事前登録。",
     },
-    form: "https://docs.google.com/forms/d/e/1FAIpQLSc-workshops-registration/viewform",
+    form: "https://forms.gle/Z76UA4MRfQdh5Ptx9",
     image: "/memories/workshops.jpg",
   },
   {
@@ -820,7 +968,7 @@ export const registrations: { title: L; desc: L; form: string; image: string }[]
       en: "Register for grand auditorium cultural acts, musical performances, and talent showcases.",
       jp: "大講堂メインステージでの文化演技・音楽パフォーマンスの登録。",
     },
-    form: "https://docs.google.com/forms/d/e/1FAIpQLSc-activities-registration/viewform",
+    form: "https://forms.gle/Dy4RAjfpCod9U5wMA",
     image: "/memories/activities.jpg",
   },
 ];

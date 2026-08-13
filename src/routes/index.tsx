@@ -10,7 +10,7 @@ import { WaveDivider } from "@/components/Atmosphere";
 import { FloatingOrbGallery } from "@/components/FloatingOrbGallery";
 import { useLang } from "@/lib/lang";
 import { chapters, faculty, festival, sponsors, stats, team, ui } from "@/content/site";
-import { Maximize2, X } from "lucide-react";
+import { Maximize2, X, ListFilter, Users } from "lucide-react";
 import { CountdownTimer } from "@/components/CountdownTimer";
 
 export const Route = createFileRoute("/")({
@@ -183,12 +183,14 @@ function Index() {
     designation: string;
     department?: string;
   } | null>(null);
+  const [selectedCategoryModal, setSelectedCategoryModal] = useState<(typeof team)[0] | null>(null);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
         setLightbox(null);
         setModalPhoto(null);
+        setSelectedCategoryModal(null);
       }
     };
     window.addEventListener("keydown", handleKeyDown);
@@ -498,14 +500,41 @@ function Index() {
           </div>
 
           {/* 4TH LINE: FACULTY MENTORS — 9 items (> 5 frames: Marquee Scroll) */}
-          <div className="space-y-6">
-            <div className="flex items-center gap-3">
-              <span className="h-2.5 w-2.5 rounded-full bg-crimson shadow-[0_0_8px_var(--gold)]" />
-              <h3 className="font-display text-base font-bold uppercase tracking-[0.2em] text-gold sm:text-lg">
-                Faculty Mentors <span className="text-xs font-normal text-cream/50 ml-2 font-jp">教員メンター</span>
-              </h3>
-              <div className="h-px flex-1 bg-gradient-to-r from-gold/30 to-transparent" />
-            </div>
+          {(() => {
+            const mentors = faculty.filter((f) => f.category === "Faculty Mentor");
+            const isMentorsScrolling = mentors.length > 5;
+            return (
+              <div className="space-y-6">
+                <div className="flex items-center justify-between gap-3">
+                  <div className="flex items-center gap-3">
+                    <span className="h-2.5 w-2.5 rounded-full bg-crimson shadow-[0_0_8px_var(--gold)]" />
+                    <h3 className="font-display text-base font-bold uppercase tracking-[0.2em] text-gold sm:text-lg">
+                      Faculty Mentors <span className="text-xs font-normal text-cream/50 ml-2 font-jp">教員メンター</span>
+                    </h3>
+                  </div>
+                  <div className="flex items-center gap-3 flex-1">
+                    <div className="h-px flex-1 bg-gradient-to-r from-gold/30 to-transparent" />
+                    {isMentorsScrolling && (
+                      <button
+                        onClick={() =>
+                          setSelectedCategoryModal({
+                            category: { en: "Faculty Mentors", jp: "教員メンター" },
+                            members: mentors.map((f) => ({
+                              name: f.name,
+                              role: f.designation,
+                              department: f.department,
+                              photo: f.photo,
+                            })),
+                          })
+                        }
+                        className="inline-flex items-center gap-1.5 rounded-full bg-gold/15 px-3 py-1 text-[11px] sm:text-xs font-bold text-gold border border-gold/40 hover:bg-gold hover:text-black transition-all duration-300 shadow-md uppercase tracking-wider shrink-0"
+                      >
+                        <ListFilter className="h-3.5 w-3.5" />
+                        VIEW ALL ({mentors.length})
+                      </button>
+                    )}
+                  </div>
+                </div>
 
             <div className="relative overflow-hidden py-4 [mask-image:linear-gradient(90deg,transparent,black_6%,black_94%,transparent)]">
               <div
@@ -559,6 +588,8 @@ function Index() {
               </div>
             </div>
           </div>
+          );
+          })()}
         </div>
       </section>
 
@@ -591,13 +622,26 @@ function Index() {
             const isMarquee = group.members.length > 5;
             return (
               <div key={groupIdx} className="space-y-6">
-                {/* Category Header Badge */}
-                <div className="flex items-center gap-3">
-                  <span className="h-2 w-2 rounded-full bg-crimson shadow-[0_0_8px_var(--gold)]" />
-                  <h3 className="font-display text-base font-bold uppercase tracking-[0.2em] text-gold sm:text-lg">
-                    {t(group.category)}
-                  </h3>
-                  <div className="h-px flex-1 bg-gradient-to-r from-gold/30 to-transparent" />
+                {/* Category Header Badge with View All Button ONLY if scrolling (> 5 members) */}
+                <div className="flex items-center justify-between gap-3">
+                  <div className="flex items-center gap-3">
+                    <span className="h-2 w-2 rounded-full bg-crimson shadow-[0_0_8px_var(--gold)]" />
+                    <h3 className="font-display text-base font-bold uppercase tracking-[0.2em] text-gold sm:text-lg">
+                      {t(group.category)}
+                    </h3>
+                  </div>
+                  <div className="flex items-center gap-3 flex-1">
+                    <div className="h-px flex-1 bg-gradient-to-r from-gold/30 to-transparent" />
+                    {isMarquee && (
+                      <button
+                        onClick={() => setSelectedCategoryModal(group)}
+                        className="inline-flex items-center gap-1.5 rounded-full bg-gold/15 px-3 py-1 text-[11px] sm:text-xs font-bold text-gold border border-gold/40 hover:bg-gold hover:text-black transition-all duration-300 shadow-md uppercase tracking-wider shrink-0"
+                      >
+                        <ListFilter className="h-3.5 w-3.5" />
+                        VIEW ALL ({group.members.length})
+                      </button>
+                    )}
+                  </div>
                 </div>
 
                 {isMarquee ? (
@@ -739,7 +783,7 @@ function Index() {
           {t(ui.memoriesNote)}
         </p>
 
-        <FloatingOrbGallery photos={memories} onSelect={setLightbox} />
+        <FloatingOrbGallery photos={Array.from(new Set(memories))} onSelect={setLightbox} />
       </section>
 
       {/* OFFICIAL HOST & FOOTER BANNER */}
@@ -789,6 +833,101 @@ function Index() {
             >
               ✕
             </button>
+          </div>
+        </div>
+      )}
+
+      {/* CATEGORY VIEW ALL LIST MODAL */}
+      {selectedCategoryModal && (
+        <div
+          className="fixed inset-0 z-[90] grid place-items-center bg-black/90 p-4 sm:p-6 backdrop-blur-md animate-fade-in cursor-pointer"
+          onClick={() => setSelectedCategoryModal(null)}
+        >
+          <div
+            className="glass relative w-full max-w-xl max-h-[85vh] overflow-hidden rounded-3xl border-2 border-gold/50 p-5 sm:p-8 shadow-[0_0_50px_rgba(200,16,46,0.5)] bg-zinc-950/95 cursor-default flex flex-col"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Close Button */}
+            <button
+              type="button"
+              onClick={() => setSelectedCategoryModal(null)}
+              className="absolute right-4 top-4 z-20 grid h-9 w-9 place-items-center rounded-full bg-black/70 text-gold hover:bg-gold hover:text-black transition-all border border-gold/40 shadow-lg cursor-pointer"
+              aria-label="Close section members list"
+            >
+              <X className="h-5 w-5" />
+            </button>
+
+            <div className="mb-4 pr-10">
+              <div className="flex items-center gap-2 text-xs font-bold text-gold tracking-widest uppercase">
+                <Users className="h-4 w-4 text-crimson" />
+                DEPARTMENT MEMBERS LIST
+              </div>
+              <h3 className="font-display text-xl sm:text-2xl font-bold text-cream gold-text uppercase mt-1">
+                {t(selectedCategoryModal.category)}
+              </h3>
+              <p className="text-xs text-cream/70 mt-1 font-medium">
+                {selectedCategoryModal.members.length} members in this department. Click photo to enlarge.
+              </p>
+            </div>
+
+            <div className="h-px w-full bg-gradient-to-r from-gold/40 via-gold to-gold/40 mb-4" />
+
+            {/* Scrollable Member List */}
+            <div className="flex-1 overflow-y-auto space-y-3 pr-1">
+              {selectedCategoryModal.members.map((member, idx) => (
+                <div
+                  key={`${member.name}-${idx}`}
+                  className="flex items-center justify-between gap-4 p-3 rounded-2xl glass border border-gold/30 hover:border-gold transition-colors group"
+                >
+                  <div className="flex items-center gap-3.5 flex-1 min-w-0">
+                    {/* Small Image - Clickable to open enlarged photo modal */}
+                    <div
+                      onClick={() =>
+                        setModalPhoto({
+                          photo: member.photo,
+                          name: member.name,
+                          designation: t(member.role),
+                          department: t(member.department),
+                        })
+                      }
+                      className="relative h-12 w-12 sm:h-14 sm:w-14 shrink-0 overflow-hidden rounded-full border-2 border-gold/60 bg-black cursor-pointer group-hover:scale-105 transition-transform"
+                    >
+                      <img
+                        src={member.photo}
+                        alt={member.name}
+                        className="h-full w-full object-cover object-top"
+                      />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <h4 className="font-display text-sm sm:text-base font-bold text-cream truncate group-hover:text-gold transition-colors">
+                        {member.name}
+                      </h4>
+                      <p className="text-xs font-semibold text-gold/90 uppercase tracking-wider truncate">
+                        {t(member.role)}
+                      </p>
+                      <p className="text-[10px] text-cream/70 truncate">{t(member.department)}</p>
+                    </div>
+                  </div>
+
+                  {/* View Full Photo Button */}
+                  <button
+                    type="button"
+                    onClick={() =>
+                      setModalPhoto({
+                        photo: member.photo,
+                        name: member.name,
+                        designation: t(member.role),
+                        department: t(member.department),
+                      })
+                    }
+                    className="shrink-0 rounded-full bg-gold/10 p-2 text-gold hover:bg-gold hover:text-black border border-gold/40 transition-colors cursor-pointer"
+                    title="Enlarge Photo"
+                  >
+                    <Maximize2 className="h-4 w-4" />
+                  </button>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       )}
