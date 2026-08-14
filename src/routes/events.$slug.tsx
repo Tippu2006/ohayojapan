@@ -16,18 +16,18 @@ export const Route = createFileRoute("/events/$slug")({
     if (!loaderData) {
       return {
         meta: [
-          { title: "Event not found — OHAYŌ JAPAN" },
+          { title: "Event not found — OHAYOU JAPAN" },
           { name: "robots", content: "noindex" },
         ],
       };
     }
-    const title = `${loaderData.event.title.en} — OHAYŌ JAPAN`;
+    const title = `${loaderData.event.title.en} — OHAYOU JAPAN`;
     return {
       meta: [
         { title },
-        { name: "description", content: "KL University × OHAYŌ JAPAN" },
+        { name: "description", content: "KL University × OHAYOU JAPAN" },
         { property: "og:title", content: title },
-        { property: "og:description", content: "KL University × OHAYŌ JAPAN" },
+        { property: "og:description", content: "KL University × OHAYOU JAPAN" },
       ],
     };
   },

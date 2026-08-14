@@ -7,15 +7,15 @@ import cosplay from "@/assets/event-cosplay.jpg";
 export const Route = createFileRoute("/events/")({
   head: () => ({
     meta: [
-      { title: "Events — OHAYŌ JAPAN" },
+      { title: "Events — OHAYOU JAPAN" },
       {
         name: "description",
-        content: "KL University × OHAYŌ JAPAN",
+        content: "KL University × OHAYOU JAPAN",
       },
-      { property: "og:title", content: "Events — OHAYŌ JAPAN" },
+      { property: "og:title", content: "Events — OHAYOU JAPAN" },
       {
         property: "og:description",
-        content: "KL University × OHAYŌ JAPAN",
+        content: "KL University × OHAYOU JAPAN",
       },
     ],
   }),

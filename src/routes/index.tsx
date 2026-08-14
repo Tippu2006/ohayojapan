@@ -16,16 +16,16 @@ import { CountdownTimer } from "@/components/CountdownTimer";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "OHAYŌ JAPAN" },
+      { title: "OHAYOU JAPAN" },
       {
         name: "description",
-        content: "KL University × OHAYŌ JAPAN",
+        content: "KL University × OHAYOU JAPAN",
       },
-      { property: "og:site_name", content: "OHAYŌ JAPAN" },
-      { property: "og:title", content: "OHAYŌ JAPAN" },
+      { property: "og:site_name", content: "OHAYOU JAPAN" },
+      { property: "og:title", content: "OHAYOU JAPAN" },
       {
         property: "og:description",
-        content: "KL University × OHAYŌ JAPAN",
+        content: "KL University × OHAYOU JAPAN",
       },
     ],
   }),
@@ -222,7 +222,7 @@ function Index() {
               <div className="relative flex items-center justify-center rounded-full bg-black/60 backdrop-blur-md p-3 sm:p-6 border-2 border-gold/60 shadow-[0_0_35px_rgba(255,215,0,0.35)] transition-transform duration-500 group-hover:scale-105">
                 <img
                   src="/logo.png"
-                  alt="OHAYO JAPAN Official Samurai Emblem Logo"
+                  alt="OHAYOU JAPAN Official Samurai Emblem Logo"
                   className="h-36 w-36 object-contain sm:h-56 sm:w-56 md:h-64 md:w-64 drop-shadow-[0_0_20px_rgba(255,215,0,0.3)]"
                 />
               </div>
@@ -239,7 +239,7 @@ function Index() {
           <h1 className="mt-4 sm:mt-6 font-display text-[11vw] sm:text-[6rem] lg:text-[7.5rem] leading-[0.92] sm:leading-[0.88] tracking-wider">
             {(lang === "jp"
               ? ["おはよう", "ジャパン", "２０２６"]
-              : ["OHAYŌ", "JAPAN", festival.year]
+              : ["OHAYOU", "JAPAN", festival.year]
             ).map((line, i) => (
               <span
                 key={line}
@@ -249,14 +249,7 @@ function Index() {
                   filter: "drop-shadow(0 10px 30px rgba(200, 16, 46, 0.6))",
                 }}
               >
-                {line === "OHAYŌ" ? (
-                  <span className="inline-block relative">
-                    OHAYO
-                    <span className="absolute -top-[0.16em] right-[0.24em] w-[0.40em] h-[0.07em] bg-gradient-to-r from-[#FFE58F] via-[#FFD700] to-[#E6A100] rounded-full shadow-[0_0_10px_rgba(255,215,0,0.9)]" />
-                  </span>
-                ) : (
-                  line
-                )}
+                {line}
               </span>
             ))}
           </h1>

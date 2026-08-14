@@ -20,11 +20,11 @@ export function TopControls() {
         >
           <img
             src="/logo.png"
-            alt="OHAYO JAPAN Logo"
+            alt="OHAYOU JAPAN Logo"
             className="h-6 sm:h-7 w-auto object-contain drop-shadow-[0_0_8px_rgba(255,215,0,0.4)] transition-transform duration-300 group-hover:scale-110"
           />
           <span className="hidden font-display text-xs font-bold tracking-wider text-cream group-hover:text-gold sm:inline">
-            OHAYO JAPAN 2026
+            OHAYOU JAPAN 2026
           </span>
         </Link>
 

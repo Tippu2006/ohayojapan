@@ -98,7 +98,7 @@ export function Landing() {
           <div className="rounded-full bg-[radial-gradient(circle_at_center,#1f080b_0%,#0c0608_60%,#000000_100%)] p-4 sm:p-5 border-2 border-gold/70 shadow-[0_0_40px_rgba(200,16,46,0.6),0_0_25px_rgba(255,215,0,0.5)] backdrop-blur-xl transition-transform duration-300 hover:scale-105">
             <img
               src="/logo.png"
-              alt="OHAYO JAPAN Official Logo — Click for Dragon Entrance"
+              alt="OHAYOU JAPAN Official Logo — Click for Dragon Entrance"
               className="h-40 w-40 object-contain sm:h-52 sm:w-52 drop-shadow-[0_0_15px_rgba(255,215,0,0.3)]"
             />
           </div>

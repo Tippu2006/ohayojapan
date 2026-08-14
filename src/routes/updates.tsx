@@ -8,13 +8,13 @@ const animeMovie = "/memories/anime_movie_screening.jpg";
 export const Route = createFileRoute("/updates")({
   head: () => ({
     meta: [
-      { title: "Official Releases & Updates — OHAYŌ JAPAN 2026" },
+      { title: "Official Releases & Updates — OHAYOU JAPAN 2026" },
       {
         name: "description",
-        content: "Official Date Launch Video, Teaser, Trailer Announcement, and Anime Movie Screening Highlights for OHAYŌ JAPAN 2026!",
+        content: "Official Date Launch Video, Teaser, Trailer Announcement, and Anime Movie Screening Highlights for OHAYOU JAPAN 2026!",
       },
-      { property: "og:title", content: "Official Releases & Updates — OHAYŌ JAPAN 2026" },
-      { property: "og:description", content: "KL University × OHAYŌ JAPAN 2026" },
+      { property: "og:title", content: "Official Releases & Updates — OHAYOU JAPAN 2026" },
+      { property: "og:description", content: "KL University × OHAYOU JAPAN 2026" },
     ],
   }),
   component: UpdatesPage,
@@ -35,9 +35,9 @@ const mediaVideos: MediaVideo[] = [
   {
     id: "date-launch",
     badge: "OFFICIAL DATE LAUNCH",
-    title: "OHAYŌ JAPAN 2026 Official Date Announcement",
+    title: "OHAYOU JAPAN 2026 Official Date Announcement",
     jpTitle: "公式開催日発表映像",
-    description: "Watch the grand Date Launch ceremony unveiling the official dates, cultural exhibitions, and performance lineup for OHAYŌ JAPAN 2026!",
+    description: "Watch the grand Date Launch ceremony unveiling the official dates, cultural exhibitions, and performance lineup for OHAYOU JAPAN 2026!",
     embedUrl: "https://drive.google.com/file/d/1GvuS8hkP6-BuOvINrJNqxb75L5dpndm3/preview",
     driveUrl: "https://drive.google.com/file/d/1GvuS8hkP6-BuOvINrJNqxb75L5dpndm3/view?usp=drive_link",
     poster: "/memories/inauguration_wide.jpg",
@@ -45,7 +45,7 @@ const mediaVideos: MediaVideo[] = [
   {
     id: "teaser",
     badge: "OFFICIAL TEASER",
-    title: "OHAYŌ JAPAN 2026 Official Teaser",
+    title: "OHAYOU JAPAN 2026 Official Teaser",
     jpTitle: "公式ティーザー",
     description: "Experience the vibrant spirit of Japanese culture, cosplay showcases, martial arts, fusion dances, and anime screening!",
     embedUrl: "https://drive.google.com/file/d/1Q1WtTXXXPuktsa9a528VDT0skqdHfEDW/preview",
@@ -55,9 +55,9 @@ const mediaVideos: MediaVideo[] = [
   {
     id: "glimpse-2k24",
     badge: "GLIMPSE OF 2K24",
-    title: "OHAYŌ JAPAN 2k24 Highlights",
+    title: "OHAYOU JAPAN 2k24 Highlights",
     jpTitle: "2k24 ハイライト映像",
-    description: "Relive the unforgettable memories, language workshops, martial arts, tea ceremonies, and student celebrations from OHAYŌ JAPAN 2k24!",
+    description: "Relive the unforgettable memories, language workshops, martial arts, tea ceremonies, and student celebrations from OHAYOU JAPAN 2k24!",
     embedUrl: "https://drive.google.com/file/d/1PEwsyO8ZnXHDv_hkTEKPzE2WeOrdLjUn/preview",
     driveUrl: "https://drive.google.com/file/d/1PEwsyO8ZnXHDv_hkTEKPzE2WeOrdLjUn/view?usp=drive_link",
     poster: "/memories/guest_arrival.jpg",
@@ -179,7 +179,7 @@ function UpdatesPage() {
       <Reveal className="text-center">
         <div className="inline-flex items-center gap-2 rounded-full bg-crimson/20 px-4 sm:px-5 py-1.5 sm:py-2 border border-gold/40 text-gold text-[10px] sm:text-xs font-bold tracking-[0.2em] sm:tracking-[0.3em] uppercase mb-3 sm:mb-4">
           <Sparkles className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-gold animate-pulse" />
-          OHAYŌ JAPAN LATEST ANNOUNCEMENTS
+          OHAYOU JAPAN LATEST ANNOUNCEMENTS
         </div>
         <h1 className="gold-text font-display text-3xl sm:text-5xl lg:text-6xl tracking-wide uppercase">
           Official Releases & Updates
@@ -205,7 +205,7 @@ function UpdatesPage() {
                 Trailer Launch in 1st Week of September!
               </h2>
               <p className="text-xs sm:text-sm text-cream/90 font-medium leading-relaxed">
-                The official full festival trailer for OHAYŌ JAPAN 2026 will launch in the <span className="text-gold font-bold underline">1st week of September</span>. Get ready for more excitement!
+                The official full festival trailer for OHAYOU JAPAN 2026 will launch in the <span className="text-gold font-bold underline">1st week of September</span>. Get ready for more excitement!
               </p>
             </div>
           </div>
@@ -306,7 +306,7 @@ function UpdatesPage() {
                 Official Anime Movie Screening
               </h2>
               <p className="text-xs sm:text-sm text-cream/75 leading-relaxed">
-                As part of OHAYŌ JAPAN 2026, we are hosting an official anime movie screening at KL University campus. Explore the featured titles below!
+                As part of OHAYOU JAPAN 2026, we are hosting an official anime movie screening at KL University campus. Explore the featured titles below!
               </p>
             </div>
           </div>
@@ -323,7 +323,7 @@ function UpdatesPage() {
             OFFICIAL ANIME MOVIE SCREENING
           </h2>
           <p className="mt-1.5 sm:mt-2 text-xs sm:text-sm text-cream/60 font-medium">
-            Featured cinematic masterpieces scheduled for screening at OHAYŌ JAPAN 2026
+            Featured cinematic masterpieces scheduled for screening at OHAYOU JAPAN 2026
           </p>
         </Reveal>
 

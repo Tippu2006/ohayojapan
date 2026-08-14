@@ -8,13 +8,13 @@ import lanterns from "@/assets/lanterns.jpg";
 export const Route = createFileRoute("/schedule")({
   head: () => ({
     meta: [
-      { title: "Schedule — OHAYŌ JAPAN" },
+      { title: "Schedule — OHAYOU JAPAN" },
       {
         name: "description",
-        content: "KL University × OHAYŌ JAPAN",
+        content: "KL University × OHAYOU JAPAN",
       },
-      { property: "og:title", content: "Schedule — OHAYŌ JAPAN" },
-      { property: "og:description", content: "KL University × OHAYŌ JAPAN" },
+      { property: "og:title", content: "Schedule — OHAYOU JAPAN" },
+      { property: "og:description", content: "KL University × OHAYOU JAPAN" },
     ],
   }),
   component: SchedulePage,

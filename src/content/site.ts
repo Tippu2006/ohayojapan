@@ -14,15 +14,15 @@
 export type L = { en: string; jp: string };
 
 export const festival = {
-  name: "OHAYŌ JAPAN",
+  name: "OHAYOU JAPAN",
   year: "2026",
   /** Festival start — used by the countdown timer. */
   startsAt: "2026-09-16T09:00:00+05:30",
   dates: { en: "SEPTEMBER 16 – 17, 2026", jp: "2026年9月16日〜17日" },
   presenter: { en: "KL University proudly presents", jp: "KL大学が誇りを持ってお届けします" },
   collabLine: {
-    en: "KL University  ×  OHAYŌ JAPAN 2026",
-    jp: "KL大学 × OHAYŌ JAPAN 2026",
+    en: "KL University  ×  OHAYOU JAPAN 2026",
+    jp: "KL大学 × OHAYOU JAPAN 2026",
   },
   subtitle: { en: "Experience Japanese Culture", jp: "ジャパン文化を体験する" },
   tagline: {
@@ -47,8 +47,8 @@ export const ui = {
   begun: { en: "The Festival Has Begun!", jp: "祭りが始まりました！" },
   faculty: { en: "Special Thanks To", jp: "特別感謝" },
   facultyNote: {
-    en: "Honoring the visionary leaders and mentors supporting OHAYŌ JAPAN 2026",
-    jp: "OHAYŌ JAPAN 2026を支える指導陣および関係者の皆様",
+    en: "Honoring the visionary leaders and mentors supporting OHAYOU JAPAN 2026",
+    jp: "OHAYOU JAPAN 2026を支える指導陣および関係者の皆様",
   },
   collaborators: { en: "Collaborators & Sponsors", jp: "協力・スポンサー" },
   timeline: { en: "Festival Timeline", jp: "祭りの歩み" },
@@ -82,8 +82,8 @@ export const ui = {
   },
   team: { en: "Organizing Team", jp: "実行委員会" },
   teamNote: {
-    en: "The dedicated student coordinators and committee bringing OHAYO JAPAN 2026 to life",
-    jp: "OHAYO JAPAN 2026の開催に向けて尽力する学生実行委員会メンバー",
+    en: "The dedicated student coordinators and committee bringing OHAYOU JAPAN 2026 to life",
+    jp: "OHAYOU JAPAN 2026の開催に向けて尽力する学生実行委員会メンバー",
   },
 };
 
@@ -474,12 +474,6 @@ export const team: {
     category: { en: "HR & Drafting", jp: "人事・起草部門" },
     members: [
       {
-        name: "NEHA SRUSTI SREE",
-        role: { en: "Chief", jp: "人事統括責任者" },
-        department: { en: "HR & Drafting", jp: "人事部" },
-        photo: teamAvatar("NEHA SRUSTI SREE", "CHIEF"),
-      },
-      {
         name: "J VEDA SUHAS KULKARNI",
         role: { en: "Chief", jp: "人事統括責任者" },
         department: { en: "HR & Drafting", jp: "人事部" },
@@ -513,6 +507,12 @@ export const team: {
         role: { en: "Core Team", jp: "コアチーム" },
         department: { en: "Logistics Division", jp: "設営部" },
         photo: teamAvatar("BHADRIRAJU SREEHITHA", "CORE"),
+      },
+      {
+        name: "EESHA KODALI",
+        role: { en: "Core Team", jp: "コアチーム" },
+        department: { en: "Logistics Division", jp: "設営部" },
+        photo: teamAvatar("EESHA KODALI", "CORE"),
       },
     ],
   },
@@ -576,8 +576,8 @@ export const chapters: { year: string; title: L; dates: L; text: L }[] = [
     title: { en: "First Chapter — The Dawn", jp: "第一章 — 黎明" },
     dates: { en: "November 7 – 8, 2024", jp: "2024年11月7日〜8日" },
     text: {
-      en: "The first OHAYŌ JAPAN opened its gates — calligraphy, language workshops, traditional arts, and a campus transformed into a vibrant sanctuary of Japanese culture.",
-      jp: "最初のOHAYŌ JAPANが開門。書道、言語ワークショップ、伝統芸術、そしてキャンパス全体が鮮やかなジャパン文化の聖地へと生まれ変わりました。",
+      en: "The first OHAYOU JAPAN opened its gates — calligraphy, language workshops, traditional arts, and a campus transformed into a vibrant sanctuary of Japanese culture.",
+      jp: "最初のOHAYOU JAPANが開門。書道、言語ワークショップ、伝統芸術、そしてキャンパス全体が鮮やかなジャパン文化の聖地へと生まれ変わりました。",
     },
   },
   {
@@ -756,8 +756,8 @@ export const events: EventItem[] = [
       jp: "推しキャラになりきってメインステージの主役に。",
     },
     description: {
-      en: "The flagship spectacle of OHAYO JAPAN! Walk the central runway in handcrafted costumes, perform a 3-minute stage act, and showcase craft, character accuracy, and stage presence.",
-      jp: "OHAYO JAPANの目玉イベント！こだわりぬいた手作りの衣装でランウェイを歩き、3分間のパフォーマンスで完成度・再現度・表現力を披露します。",
+      en: "The flagship spectacle of OHAYOU JAPAN! Walk the central runway in handcrafted costumes, perform a 3-minute stage act, and showcase craft, character accuracy, and stage presence.",
+      jp: "OHAYOU JAPANの目玉イベント！こだわりぬいた手作りの衣装でランウェイを歩き、3分間のパフォーマンスで完成度・再現度・表現力を披露します。",
     },
     rules: [
       {
