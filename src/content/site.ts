@@ -755,8 +755,8 @@ export const events: EventItem[] = [
       jp: "推しキャラになりきってメインステージの主役に。",
     },
     description: {
-      en: "The flagship spectacle of OHAYOU JAPAN! Walk the central runway in handcrafted costumes, perform a 3-minute stage act, and showcase craft, character accuracy, and stage presence.",
-      jp: "OHAYOU JAPANの目玉イベント！こだわりぬいた手作りの衣装でランウェイを歩き、3分間のパフォーマンスで完成度・再現度・表現力を披露します。",
+      en: "The flagship spectacle of OHAYOU JAPAN! Walk the central runway in handcrafted costumes, perform a stage act, and showcase craft, character accuracy, and stage presence.",
+      jp: "OHAYOU JAPANの目玉イベント！こだわりぬいた手作りの衣装でランウェイを歩き、パフォーマンスで完成度・再現度・表現力を披露します。",
     },
     rules: [
       {
@@ -776,47 +776,103 @@ export const events: EventItem[] = [
         jp: "衣装は公式のジャパンのアニメ、ゲーム、漫画、伝統に由来すること。",
       },
     ],
-    venue: { en: "Yet to be announced", jp: "会場近日発表" },
-    time: { en: "Yet to be announced", jp: "日時近日発表" },
-    coordinator: "Dr. K. Sharma",
-    form: "https://forms.gle/Pn9xnCURihvj3p4F6",
+    venue: { en: "R&D Hall", jp: "R&Dホール" },
+    time: { en: "Day 1 — 02:00 PM", jp: "1日目 14:00〜" },
+    coordinator: "Cosplay Cell Coordinator",
+    form: "https://forms.gle/1AEvN1J2TRCSu4Lx8",
     image: "/memories/cosplay_competition.jpg",
   },
   {
-    slug: "indo-japanese-dance",
-    title: { en: "Indo–Japanese Fusion Dance", jp: "印日フュージョンダンス" },
+    slug: "fashion-walk",
+    title: { en: "Fashion Walk", jp: "ファッションウォーク" },
     short: {
-      en: "A mesmerizing choreography combining two rich artistic cultures.",
-      jp: "二つの豊かな文化が美しく融合するダンスパフォーマンス。",
+      en: "Showcase traditional Yukata, Kimono, and modern Japanese fashion on stage.",
+      jp: "伝統の浴衣・着物や現代のジャパンファッションをランウェイで披露。",
     },
     description: {
-      en: "Teams blend traditional Indian dance styles (Bharatanatyam, Kathak, Folk) with Japanese Yosakoi, Odori, and modern J-Pop routines in a spectacular synchronized performance.",
-      jp: "インドの伝統舞踊（バラタナティヤム、カタック、民謡など）とジャパンのよさこい・踊り・J-POPの振付を融合させた革新的なステージ表現。",
+      en: "Walk the runway in authentic or fusion Japanese attire, Yukatas, Kimonos, and streetwear. Celebrate elegance, style, and Japanese fashion aesthetics.",
+      jp: "伝統的な着物・浴衣から現代のJ-ファッション・ストリートウェアまで、ランウェイで華麗に表現しよう。",
     },
     rules: [
-      { en: "Teams must consist of 4 to 12 dancers.", jp: "チーム構成は4名〜12名。" },
-      { en: "Audio track duration limit is 5 minutes.", jp: "楽曲の長さは最長5分。" },
       {
-        en: "Must submit audio tracks at least 48 hours prior to event.",
-        jp: "音源データは開催48時間前までに運営に提出。",
+        en: "Solo or paired entries permitted.",
+        jp: "ソロまたはペアでのエントリーが可能。",
+      },
+      {
+        en: "Attire must incorporate traditional or modern Japanese elements.",
+        jp: "衣装には和風の伝統的または現代的要素を取り入れること。",
+      },
+      {
+        en: "Ramp walk duration per contestant is 1 to 2 minutes.",
+        jp: "ランウェイの持ち時間は1〜2分。",
       },
     ],
-    venue: { en: "Yet to be announced", jp: "会場近日発表" },
-    time: { en: "Yet to be announced", jp: "日時近日発表" },
-    coordinator: "Dr. G. Meena",
-    form: "https://forms.gle/RM2nbEzpTCVAkJ8KA",
+    venue: { en: "R&D Hall", jp: "R&Dホール" },
+    time: { en: "Day 1 — 02:00 PM", jp: "1日目 14:00〜" },
+    coordinator: "Fashion Cell Coordinator",
+    form: "https://forms.gle/aWtg8i5bkMovp4GCA",
+    image: "/memories/award_yukata_team.jpg",
+  },
+  {
+    slug: "indian-dance",
+    title: { en: "Indian Dance", jp: "インドダンス" },
+    short: {
+      en: "Express rich Indian classical, folk, and cinematic dance forms.",
+      jp: "インドの豊かな古典舞踊・フォーク・ボリウッドダンスの演舞。",
+    },
+    description: {
+      en: "Showcase vibrant Indian classical (Bharatanatyam, Kathak), folk, or Bollywood dance routines on the main stage. High-energy performances celebrating rhythm and storytelling.",
+      jp: "古典舞踊からボリウッド・民踊まで、インド舞踊の情熱とリズムをメインステージで華やかに繰り広げます。",
+    },
+    rules: [
+      { en: "Solo and group entries (maximum 8 participants).", jp: "ソロおよびグループ（最大8名まで）。" },
+      { en: "Performance duration limit is 4 minutes.", jp: "持ち時間は最大4分。" },
+      {
+        en: "Audio track must be submitted prior to the event.",
+        jp: "音源データは事前に運営へ提出のこと。",
+      },
+    ],
+    venue: { en: "R&D Hall", jp: "R&Dホール" },
+    time: { en: "Day 1 — 02:00 PM", jp: "1日目 14:00〜" },
+    coordinator: "Dance Cell Coordinator",
+    form: "https://forms.gle/g4h9cjcAods1yLJT9",
+    image: "/memories/award_dancer.jpg",
+  },
+  {
+    slug: "japanese-dance",
+    title: { en: "Japanese Dance", jp: "ジャパンダンス" },
+    short: {
+      en: "Perform traditional Yosakoi, Odori, and energetic J-Pop dance cover routines.",
+      jp: "よさこい、伝統踊り、熱気あふれるJ-POPダンスカバー演舞。",
+    },
+    description: {
+      en: "Step onto the stage with traditional Japanese folk dances (Yosakoi, Bon Odori) or dynamic modern J-Pop and Anime dance choreography.",
+      jp: "日本の伝統舞踊（よさこい・盆踊り）から現代のJ-POP・アニソンダンスカバーまで、躍動感あふれるパフォーマンス。",
+    },
+    rules: [
+      { en: "Solo and group entries permitted.", jp: "ソロおよびグループ参加可能。" },
+      { en: "Audio track duration limit is 4 minutes.", jp: "楽曲の長さは最長4分。" },
+      {
+        en: "Choreography must represent Japanese dance forms or J-Pop.",
+        jp: "振付は日本の伝統舞踊またはJ-POPに沿ったものであること。",
+      },
+    ],
+    venue: { en: "R&D Hall", jp: "R&Dホール" },
+    time: { en: "Day 1 — 02:00 PM", jp: "1日目 14:00〜" },
+    coordinator: "Dance Cell Coordinator",
+    form: "https://forms.gle/VN6Q3zAdqRJh3qZ26",
     image: "/memories/indo_japanese_dance.jpg",
   },
   {
     slug: "karaoke",
-    title: { en: "J-Pop & Anime Karaoke", jp: "J-POP＆アニメカラオケ" },
+    title: { en: "Karaoke", jp: "カラオケ" },
     short: {
       en: "Unleash your vocal passion with iconic Japanese anime songs and classics.",
       jp: "名曲アニソンとJ-POPで歌声を響かせよう。",
     },
     description: {
       en: "Take the mic for legendary anime openings, city pop classics, and emotional ballads! Complete with lyrics screen, studio-grade sound system, and enthusiastic audience cheering.",
-      jp: "伝説のアニメOP、シティポップの名曲、感動のバラードを熱唱！大型スクリーンの歌詞表示と高音質音響、会場の一体感を楽しもう。",
+      jp: "伝説のアニメOP、シティポップの名曲、感動のバラードを熱唱！大型スクリーンの歌詞表示と高音質音響を楽しもう。",
     },
     rules: [
       {
@@ -828,146 +884,131 @@ export const events: EventItem[] = [
         jp: "音源はバッキング（オフボーカル）のみ使用可能。",
       },
     ],
-    venue: { en: "Yet to be announced", jp: "会場近日発表" },
-    time: { en: "Yet to be announced", jp: "日時近日発表" },
-    coordinator: "Prof. H. Sato",
-    form: "https://forms.gle/RGrdq6xv17ErQ9Gs7",
+    venue: { en: "R&D Hall", jp: "R&Dホール" },
+    time: { en: "Day 1 — 02:00 PM", jp: "1日目 14:00〜" },
+    coordinator: "Music Cell Coordinator",
+    form: "https://forms.gle/6k2pjGTceyeBYh9r7",
     image: "/memories/karaoke_competition.jpg",
   },
   {
-    slug: "origami-workshop",
-    title: { en: "Master Origami Workshop", jp: "折り紙マスターワークショップ" },
+    slug: "speech-contest",
+    title: { en: "Speech Contest", jp: "スピーチコンテスト" },
     short: {
-      en: "Transform humble paper into cranes, samurai helmets and lotus flowers.",
-      jp: "一枚の紙から生み出される鶴、兜、美しき花々。",
+      en: "Demonstrate your Japanese language fluency, expression, and storytelling skills.",
+      jp: "日本語での表現力、スピーチ力、思いを込めたスピーチを披露。",
     },
     description: {
-      en: "A step-by-step masterclass guided by seasoned paper artists. Learn intricate folding techniques, geometric symmetry, and the spiritual history of Japanese origami paper art.",
-      jp: "熟練の折り紙作家による丁寧な指導。折り目の美しさ、幾何学の調和、そして伝統的な折り紙文化の歴史を体験できます。",
+      en: "Deliver a compelling speech in Japanese on culture, cross-border friendship, or personal journeys. Judged on language clarity, content depth, and stage confidence.",
+      jp: "文化・国際交流・個人の情熱をテーマに日本語でスピーチ。発音・内容の深さ・表現力を競い合います。",
     },
     rules: [
       {
-        en: "Limited to 60 seats per session. Materials provided.",
-        jp: "各回定員60名。専用和紙を配布します。",
+        en: "Speech must be presented in Japanese language.",
+        jp: "スピーチは日本語で発表すること。",
+      },
+      {
+        en: "Time limit per contestant is 3 to 5 minutes.",
+        jp: "発表時間は3〜5分以内。",
+      },
+    ],
+    venue: { en: "Peacock Hall", jp: "ピーコックホール" },
+    time: { en: "Day 2 — 10:30 AM", jp: "2日目 10:30〜" },
+    coordinator: "Language Cell Coordinator",
+    form: "https://forms.gle/McY9jo1vDnsMP5a59",
+    image: "/memories/discussion.jpg",
+  },
+  {
+    slug: "workshops",
+    title: { en: "Workshops", jp: "ワークショップ" },
+    short: {
+      en: "Interactive Japanese Calligraphy (Shodo), Master Origami, and Tea Ceremony.",
+      jp: "書道、折り紙、本格茶道などの文化体験ワークショップ。",
+    },
+    description: {
+      en: "Hands-on cultural masterclasses guided by experts! Learn Japanese calligraphy (Shodo), origami paper crafting, tea ceremony, and language basics.",
+      jp: "熟練の講師陣による文化マスタークラス！本格的な書道、折り紙工芸、茶道体験、日本語レッスンを実際に体感できます。",
+    },
+    rules: [
+      {
+        en: "Open to all registered attendees. Workshop materials provided on-site.",
+        jp: "全参加者対象。会場にて体験用の材料を配布。",
       },
       {
         en: "Suitable for beginners and experienced crafters alike.",
         jp: "初心者から経験者まで幅広く歓迎。",
       },
     ],
-    venue: { en: "Yet to be announced", jp: "会場近日発表" },
-    time: { en: "Yet to be announced", jp: "日時近日発表" },
-    coordinator: "Prof. A. Yamada",
-    form: "https://forms.gle/Z76UA4MRfQdh5Ptx9",
-    image: "/memories/origami_workshop.jpg",
-  },
-  {
-    slug: "japanese-calligraphy",
-    title: { en: "Shodo — Japanese Calligraphy", jp: "書道 — 筆と墨の世界" },
-    short: {
-      en: "Discover the Zen practice of ink, brush pressure, and kanji art.",
-      jp: "墨の香りと筆の道 — 心を静める書道体験。",
-    },
-    description: {
-      en: "Immerse yourself in traditional Japanese calligraphy (Shodo). Learn proper brush grip, stroke discipline, ink grinding, and paint your own kanji scroll to cherish.",
-      jp: "伝統的な書道の世界へ。正しい筆の持ち方、運筆、墨の磨り方を学び、自分だけのオリジナル漢字掛け軸を作り上げます。",
-    },
-    rules: [
-      {
-        en: "Authentic Sumi ink and Washi paper provided on-site.",
-        jp: "本格的な墨・筆・和紙は受付にてご用意。",
-      },
-      {
-        en: "Please wear clothing suitable for handling ink.",
-        jp: "墨が付着してもよい服装でお越しください。",
-      },
-    ],
-    venue: { en: "Yet to be announced", jp: "会場近日発表" },
-    time: { en: "Yet to be announced", jp: "日時近日発表" },
-    coordinator: "Prof. T. Nakamura",
-    form: "https://forms.gle/Z76UA4MRfQdh5Ptx9",
-    image: "/memories/calligraphy_workshop.jpg",
-  },
-  {
-    slug: "cultural-exhibition",
-    title: { en: "Cultural Exhibition & Tea Ceremony", jp: "文化総合展示＆本格茶道" },
-    short: {
-      en: "Experience Kimono dressing, Ikebana floral art, and authentic Tea Ceremony.",
-      jp: "着物の着付け、生け花、静寂に包まれた本格茶道体験。",
-    },
-    description: {
-      en: "A continuous interactive exhibition showcasing Kimono drape styling, Ikebana floral arrangements, Edo-period print displays, and live ceremonial Matcha tea preparation.",
-      jp: "着物の着付け体験、生け花展示、江戸時代の浮世絵プリント展示、そして点てたての抹茶を味わう本格的な茶道のおもてなし。",
-    },
-    rules: [
-      { en: "Open access throughout festival hours.", jp: "開催期間中いつでも自由に見学可能。" },
-      {
-        en: "Photography permitted (no flash inside Tea ceremony room).",
-        jp: "撮影可能（茶道室内部でのフラッシュは禁止）。",
-      },
-    ],
-    venue: { en: "Yet to be announced", jp: "会場近日発表" },
-    time: { en: "Yet to be announced", jp: "日時近日発表" },
-    coordinator: "Dr. P. Anitha",
-    form: "https://forms.gle/Z76UA4MRfQdh5Ptx9",
-    image: "/memories/tea_ceremony.jpg",
+    venue: { en: "SAC Hall", jp: "SACホール" },
+    time: { en: "Day 1 — 11:15 AM", jp: "1日目 11:15〜" },
+    coordinator: "Workshops Coordinator",
+    form: "https://forms.gle/ZZyACVmhgupqdhnu7",
+    image: "/memories/workshops.jpg",
   },
 ];
 
-/** Registration cards — each links to its dedicated Google Form. */
+/** Registration cards — sorted alphabetically linking directly to Google Forms. */
 export const registrations: { title: L; desc: L; form: string; image: string }[] = [
-  {
-    title: { en: "Student Body Delegation Registration", jp: "学生団体代表登録" },
-    desc: {
-      en: "Delegation passes for visiting colleges, language institutes, and cultural clubs.",
-      jp: "他大学・語学学校・文化団体代表グループのための特別登録パス。",
-    },
-    form: "https://forms.gle/oqCU2kYQVjua1ECL7",
-    image: "/memories/student_delegation_logo.jpg",
-  },
   {
     title: { en: "Cosplay Registration", jp: "コスプレ登録" },
     desc: {
       en: "Reserve your slot on the main stage to showcase your handcrafted anime & gaming costume.",
       jp: "推しキャラになりきってメインステージランウェイにエントリー。",
     },
-    form: "https://forms.gle/Pn9xnCURihvj3p4F6",
+    form: "https://forms.gle/1AEvN1J2TRCSu4Lx8",
     image: "/memories/cosplay_competition.jpg",
   },
   {
-    title: { en: "Indo–Japanese Fusion Dance Registration", jp: "印日フュージョンダンス登録" },
+    title: { en: "Fashion Walk Registration", jp: "ファッションウォーク登録" },
     desc: {
-      en: "Register your dance group for the synchronized Indo-Japanese fusion performance.",
-      jp: "印日フュージョンダンスステージへのチームエントリーはこちら。",
+      en: "Register to walk the stage in traditional Yukata, Kimono, or modern J-fashion attire.",
+      jp: "浴衣、着物、J-ファッションでメインステージランウェイにエントリー。",
     },
-    form: "https://forms.gle/RM2nbEzpTCVAkJ8KA",
+    form: "https://forms.gle/aWtg8i5bkMovp4GCA",
+    image: "/memories/award_yukata_team.jpg",
+  },
+  {
+    title: { en: "Indian Dance Registration", jp: "インドダンス登録" },
+    desc: {
+      en: "Register for Indian classical, folk, or Bollywood stage dance performances.",
+      jp: "インド古典舞踊、フォーク、ボリウッドダンスのステージエントリー。",
+    },
+    form: "https://forms.gle/g4h9cjcAods1yLJT9",
+    image: "/memories/award_dancer.jpg",
+  },
+  {
+    title: { en: "Japanese Dance Registration", jp: "ジャパンダンス登録" },
+    desc: {
+      en: "Register your dance group for Yosakoi, Bon Odori, or modern J-Pop cover routines.",
+      jp: "よさこい、伝統踊り、J-POPダンスカバーのチームエントリー。",
+    },
+    form: "https://forms.gle/VN6Q3zAdqRJh3qZ26",
     image: "/memories/indo_japanese_dance.jpg",
   },
   {
-    title: { en: "J-Pop & Anime Karaoke Registration", jp: "J-POP＆アニメカラオケ登録" },
+    title: { en: "Karaoke Registration", jp: "カラオケ登録" },
     desc: {
       en: "Take the mic and perform iconic Japanese anime openings, city pop, and J-Pop hits.",
       jp: "名曲アニソンとJ-POPで熱唱！ステージでのカラオケ登録はこちら。",
     },
-    form: "https://forms.gle/RGrdq6xv17ErQ9Gs7",
+    form: "https://forms.gle/6k2pjGTceyeBYh9r7",
     image: "/memories/karaoke_competition.jpg",
   },
   {
-    title: { en: "Cultural Workshops Registration", jp: "文化ワークショップ登録" },
+    title: { en: "Speech Contest Registration", jp: "スピーチコンテスト登録" },
     desc: {
-      en: "Reserve your seat for Japanese Calligraphy (Shodo), Origami, and Tea Ceremony masterclasses.",
-      jp: "書道、折り紙、本格茶道ワークショップの事前登録。",
+      en: "Register to present your Japanese speech on culture, cross-border friendship, and experiences.",
+      jp: "日本語スピーチコンテストへのエントリーはこちら。",
     },
-    form: "https://forms.gle/Z76UA4MRfQdh5Ptx9",
-    image: "/memories/workshops.jpg",
+    form: "https://forms.gle/McY9jo1vDnsMP5a59",
+    image: "/memories/discussion.jpg",
   },
   {
-    title: { en: "Stage Activities & Showcase Registration", jp: "ステージアクティビティ登録" },
+    title: { en: "Workshops Registration", jp: "ワークショップ登録" },
     desc: {
-      en: "Register for grand auditorium cultural acts, musical performances, and talent showcases.",
-      jp: "大講堂メインステージでの文化演技・音楽パフォーマンスの登録。",
+      en: "Reserve your seat for Japanese Calligraphy (Shodo), Master Origami, and Tea Ceremony.",
+      jp: "書道、折り紙、本格茶道ワークショップの事前登録。",
     },
-    form: "https://forms.gle/Dy4RAjfpCod9U5wMA",
-    image: "/memories/activities.jpg",
+    form: "https://forms.gle/ZZyACVmhgupqdhnu7",
+    image: "/memories/workshops.jpg",
   },
 ];
