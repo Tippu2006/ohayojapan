@@ -310,6 +310,67 @@ function Index() {
         </p>
 
         <div className="space-y-16">
+          {/* ORGANIZER SECTION — Separate Featured Frame for Dr. M Kishore Babu */}
+          <div className="space-y-6">
+            <div className="flex items-center gap-3">
+              <span className="h-3 w-3 rounded-full bg-crimson shadow-[0_0_12px_var(--crimson)] animate-pulse" />
+              <h3 className="font-display text-lg sm:text-xl font-extrabold uppercase tracking-[0.25em] text-gold">
+                Organizer{" "}
+                <span className="text-xs font-normal text-cream/60 ml-2 font-jp">主催者</span>
+              </h3>
+              <div className="h-px flex-1 bg-gradient-to-r from-gold/60 to-transparent" />
+            </div>
+
+            <div className="flex justify-center py-2">
+              {faculty
+                .filter((f) => f.category === "Organizer")
+                .map((f) => (
+                  <Reveal key={f.name}>
+                    <article
+                      className="glass lift group relative w-56 shrink-0 overflow-hidden rounded-2xl border-2 border-gold/60 p-3.5 shadow-[0_0_30px_rgba(255,215,0,0.25)] transition-all duration-500 hover:border-gold hover:shadow-[0_0_40px_rgba(200,16,46,0.5)] cursor-pointer bg-zinc-950/90"
+                      onClick={() =>
+                        setModalPhoto({
+                          photo: f.photo,
+                          name: f.name,
+                          designation: t(f.designation),
+                          department: t(f.department),
+                        })
+                      }
+                    >
+                      <span className="absolute top-2 right-2 z-10 rounded-full bg-crimson px-2.5 py-0.5 text-[9px] font-bold text-cream border border-gold/50 shadow-md uppercase tracking-wider">
+                        ORGANIZER
+                      </span>
+
+                      <div className="relative aspect-square overflow-hidden rounded-lg bg-white border-2 border-gold/40 shadow-inner">
+                        <img
+                          src={f.photo}
+                          alt={f.name}
+                          loading="lazy"
+                          className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60 pointer-events-none" />
+                        <div className="absolute inset-0 grid place-items-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                          <Maximize2 className="h-6 w-6 text-gold drop-shadow-md" />
+                        </div>
+                      </div>
+
+                      <div className="px-1 pt-3 text-center">
+                        <h3 className="font-display text-sm sm:text-base font-extrabold text-cream group-hover:text-gold transition-colors duration-300">
+                          {f.name}
+                        </h3>
+                        <p className="mt-0.5 text-xs font-bold text-gold/90 uppercase tracking-wider">
+                          {t(f.designation)}
+                        </p>
+                        <p className="mt-1 text-[10px] sm:text-xs leading-snug text-cream/75">
+                          {t(f.department)}
+                        </p>
+                      </div>
+                    </article>
+                  </Reveal>
+                ))}
+            </div>
+          </div>
+
           {/* 1ST LINE: ADVISORS — Single line continuous slow automatic marquee scroll */}
           <div className="space-y-6">
             <div className="flex items-center gap-3">

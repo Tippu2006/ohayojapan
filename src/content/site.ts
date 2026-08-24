@@ -119,14 +119,14 @@ export const faculty: {
   name: string;
   designation: L;
   department: L;
-  category: "Advisor" | "Co-Advisor" | "Convenor" | "Faculty Mentor";
+  category: "Organizer" | "Advisor" | "Co-Advisor" | "Convenor" | "Faculty Mentor";
   photo: string;
 }[] = [
   {
     name: "Dr. M Kishore Babu",
     designation: { en: "Dean", jp: "学部長" },
     department: { en: "Management, Humanities & Sciences (MHS)", jp: "経営・人文・科学部" },
-    category: "Advisor",
+    category: "Organizer",
     photo: "/faculty/kishore_babu.png",
   },
   {
@@ -172,6 +172,20 @@ export const faculty: {
     photo: "/faculty/sai_vijay.jpg",
   },
   {
+    name: "Mr. Jamindar Buddiga",
+    designation: { en: "Head of Department", jp: "学科長" },
+    department: { en: "Department of Foreign Languages", jp: "外国語学部" },
+    category: "Co-Advisor",
+    photo: "/faculty/jamindar.jpg",
+  },
+  {
+    name: "Dr. Vinay Atgur",
+    designation: { en: "Assistant Dean", jp: "副学部長" },
+    department: { en: "Industrial Practice School", jp: "産業実習スクール" },
+    category: "Co-Advisor",
+    photo: "/faculty/vinay.jpg",
+  },
+  {
     name: "Mr. V. Maruthi Vijay",
     designation: { en: "Director (IR)", jp: "国際関係局長" },
     department: { en: "International Relations", jp: "国際関係部" },
@@ -184,20 +198,6 @@ export const faculty: {
     department: { en: "International Relations", jp: "国際関係部" },
     category: "Co-Advisor",
     photo: "/faculty/aravind.jpg",
-  },
-  {
-    name: "Dr. Vinay Atgur",
-    designation: { en: "Assistant Dean", jp: "副学部長" },
-    department: { en: "Industrial Practice School", jp: "産業実習スクール" },
-    category: "Co-Advisor",
-    photo: "/faculty/vinay.jpg",
-  },
-  {
-    name: "Mr. Jamindar Buddiga",
-    designation: { en: "Head of Department", jp: "学科長" },
-    department: { en: "Department of Foreign Languages", jp: "外国語学部" },
-    category: "Co-Advisor",
-    photo: "/faculty/jamindar.jpg",
   },
   {
     name: "Mr. ANAND RAJ",
@@ -350,31 +350,43 @@ export const team: {
         name: "HARSHITA KUMARI",
         role: { en: "PR Chief", jp: "広報責任者" },
         department: { en: "PR Team", jp: "広報チーム" },
-        photo: teamAvatar("HARSHITA KUMARI", "PR CHIEF"),
-      },
-      {
-        name: "B VARUN SAI KARTHEEK",
-        role: { en: "Core Team", jp: "コアチーム" },
-        department: { en: "PR Team", jp: "広報チーム" },
-        photo: teamAvatar("B VARUN SAI KARTHEEK", "CORE"),
-      },
-      {
-        name: "SRINIVASA GOWTHAM DEEVI",
-        role: { en: "Core Team", jp: "コアチーム" },
-        department: { en: "PR Team", jp: "広報チーム" },
-        photo: teamAvatar("SRINIVASA GOWTHAM DEEVI", "CORE"),
+        photo: "/team/harshita.jpg",
       },
       {
         name: "VELPURI AKSHARA",
         role: { en: "Core Team", jp: "コアチーム" },
         department: { en: "PR Team", jp: "広報チーム" },
-        photo: teamAvatar("VELPURI AKSHARA", "CORE"),
+        photo: "/team/akshara.png",
       },
       {
         name: "MD NAZMA BEGUM",
         role: { en: "Core Team", jp: "コアチーム" },
         department: { en: "PR Team", jp: "広報チーム" },
-        photo: teamAvatar("MD NAZMA BEGUM", "CORE"),
+        photo: "/team/nazma.jpg",
+      },
+      {
+        name: "B VARUN SAI KARTHEEK",
+        role: { en: "Core Team", jp: "コアチーム" },
+        department: { en: "PR Team", jp: "広報チーム" },
+        photo: "/team/varun.png",
+      },
+      {
+        name: "DHANASREE",
+        role: { en: "Coordinator", jp: "コーディネーター" },
+        department: { en: "PR Team", jp: "広報チーム" },
+        photo: "/team/dhanasree.jpg",
+      },
+      {
+        name: "BALAJI",
+        role: { en: "Coordinator", jp: "コーディネーター" },
+        department: { en: "PR Team", jp: "広報チーム" },
+        photo: "/team/balaji.jpg",
+      },
+      {
+        name: "SRINIVASA GOWTHAM DEEVI",
+        role: { en: "Coordinator", jp: "コーディネーター" },
+        department: { en: "PR Team", jp: "広報チーム" },
+        photo: "/team/gowtham.jpg",
       },
     ],
   },
