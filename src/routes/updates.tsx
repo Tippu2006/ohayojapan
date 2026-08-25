@@ -189,23 +189,76 @@ function UpdatesPage() {
         </p>
       </Reveal>
 
-      {/* TOP MOST ANNOUNCEMENT BANNER — LATEST ANNOUNCEMENT */}
+      {/* TOP MOST FEATURED ANNOUNCEMENT BANNER — REGISTRATIONS OPEN NOW! */}
       <Reveal delay={100} className="mt-8 sm:mt-10">
-        <div className="relative overflow-hidden rounded-2xl sm:rounded-3xl glass p-4 sm:p-6 lg:p-8 border-2 border-gold/60 shadow-[0_0_50px_rgba(255,215,0,0.35)] bg-gradient-to-r from-zinc-950 via-crimson/25 to-zinc-950">
-          <div className="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
-            <div className="shrink-0 flex h-14 w-14 items-center justify-center rounded-2xl bg-crimson/40 border-2 border-gold/60 shadow-lg text-gold">
-              <Radio className="h-7 w-7 text-gold animate-pulse" />
+        <div className="relative overflow-hidden rounded-2xl sm:rounded-3xl glass p-4 sm:p-6 lg:p-8 border-2 border-gold/70 shadow-[0_0_60px_rgba(255,215,0,0.4)] bg-gradient-to-r from-zinc-950 via-crimson/30 to-zinc-950">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+            {/* Poster Image Frame */}
+            <div className="md:col-span-5 relative group overflow-hidden rounded-2xl border-2 border-gold/50 shadow-2xl">
+              <img
+                src="/memories/registrations_open.jpg"
+                alt="OHAYOU JAPAN 2K26 Event & Workshop Registrations Open Now"
+                className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
+              <span className="absolute top-3 left-3 rounded-full bg-crimson px-3 py-1 text-[10px] font-extrabold text-cream border border-gold/60 shadow-lg tracking-widest uppercase">
+                🔥 OPEN NOW
+              </span>
             </div>
-            <div className="space-y-1 flex-1">
-              <div className="inline-flex items-center gap-2 rounded-full bg-gold/20 px-3 py-0.5 text-[10px] sm:text-xs font-bold text-gold border border-gold/40 tracking-widest uppercase mb-1">
-                <Bell className="h-3 w-3 text-gold animate-bounce" />
+
+            {/* Content & Call to Action */}
+            <div className="md:col-span-7 space-y-4 text-center md:text-left">
+              <div className="inline-flex items-center gap-2 rounded-full bg-gold/20 px-3.5 py-1 text-[10px] sm:text-xs font-extrabold text-gold border border-gold/50 tracking-widest uppercase">
+                <Bell className="h-3.5 w-3.5 text-gold animate-bounce" />
                 LATEST ANNOUNCEMENT
               </div>
-              <h2 className="font-display text-lg sm:text-2xl font-extrabold text-cream gold-text uppercase">
-                Trailer Launch in 1st Week of September!
+
+              <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-extrabold text-cream gold-text uppercase leading-tight">
+                Event & Workshop Registrations Open Now!
               </h2>
+
               <p className="text-xs sm:text-sm text-cream/90 font-medium leading-relaxed">
-                The official full festival trailer for OHAYOU JAPAN 2026 will launch in the <span className="text-gold font-bold underline">1st week of September</span>. Get ready for more excitement!
+                Move to express. Inspire the world! Official registrations for <span className="text-gold font-bold">Cosplay Contest, Fashion Walk, Karaoke, Japanese Workshop, Indian Performance, Speech Contest</span>, and many more are live now!
+              </p>
+
+              <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 pt-2">
+                <a
+                  href="/register"
+                  className="inline-flex items-center gap-2 rounded-xl bg-crimson px-6 py-3 font-display text-xs sm:text-sm font-bold text-cream border border-gold/60 shadow-[0_0_20px_rgba(200,16,46,0.5)] transition-all duration-300 hover:scale-105 hover:bg-crimson/90 hover:shadow-[0_0_30px_rgba(255,215,0,0.5)] uppercase tracking-wider"
+                >
+                  <Sparkles className="h-4 w-4 text-gold animate-pulse" />
+                  REGISTER NOW
+                </a>
+                <a
+                  href="https://instagram.com/mugen_manji"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-xl glass px-4 py-3 font-display text-xs sm:text-sm font-bold text-cream/80 border border-gold/30 hover:border-gold hover:text-gold transition-all duration-300 uppercase tracking-wider"
+                >
+                  Instagram @mugen_manji ↗
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Reveal>
+
+      {/* SECONDARY ANNOUNCEMENT BANNER — TRAILER LAUNCH */}
+      <Reveal delay={150} className="mt-6">
+        <div className="relative overflow-hidden rounded-2xl glass p-4 sm:p-5 border border-gold/40 shadow-lg bg-zinc-950/80">
+          <div className="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
+            <div className="shrink-0 flex h-12 w-12 items-center justify-center rounded-xl bg-crimson/30 border border-gold/50 shadow-md text-gold">
+              <Radio className="h-6 w-6 text-gold animate-pulse" />
+            </div>
+            <div className="space-y-0.5 flex-1">
+              <div className="inline-flex items-center gap-1.5 rounded-full bg-gold/15 px-2.5 py-0.5 text-[9px] sm:text-[10px] font-bold text-gold border border-gold/30 tracking-widest uppercase">
+                TRAILER TEASER
+              </div>
+              <h3 className="font-display text-base sm:text-lg font-bold text-cream gold-text uppercase">
+                Trailer Launch in 1st Week of September!
+              </h3>
+              <p className="text-xs text-cream/80 font-medium">
+                The official full festival trailer for OHAYOU JAPAN 2026 will launch in the <span className="text-gold font-bold underline">1st week of September</span>. Stay tuned!
               </p>
             </div>
           </div>
