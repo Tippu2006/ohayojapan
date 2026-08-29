@@ -388,6 +388,12 @@ export const team: {
         department: { en: "PR Team", jp: "広報チーム" },
         photo: "/team/gowtham.jpg",
       },
+      {
+        name: "GNANATEJA Y",
+        role: { en: "Coordinator", jp: "コーディネーター" },
+        department: { en: "PR Team", jp: "広報チーム" },
+        photo: "/team/gnanateja.jpg",
+      },
     ],
   },
   {
